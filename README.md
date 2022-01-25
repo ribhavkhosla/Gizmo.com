@@ -1,4 +1,4 @@
-# FinalProjectCSI3140
+# FinalProjectCSI3140-GIZMO
 *****************************
 STUDENT INFORMATION:   
 
@@ -8,4 +8,4 @@ Ribhav Khosla - 300087647
 *****************************
 Description:
 
-In this project we will be creating a marketplace for sale and purchase of electronics. 
+The name of our project is "GIZMO". For this project we will be creating a marketplace for sale and purchase of electronics. 
