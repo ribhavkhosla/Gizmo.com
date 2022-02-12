@@ -4,7 +4,8 @@ Aditya Nair 300076404
 
 Ribhav Khosla 300087647
 
-The deliverable includes all the web pages for our project “Gizmo”. The webpages are made using HTML, CSS, and some javascript.
+The deliverable 2 includes all the web pages for our project “Gizmo”. The webpages are made using HTML, CSS, and some javascript.
+Our work is in folder "Gizmo"
 
 **Table of Contents:**
 
