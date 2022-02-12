@@ -1,0 +1,107 @@
+.main{
+    width: 100%;
+    background-color: white;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.menu, .navbar{
+    width: 100%;
+    height: 70px;
+    margin: auto;
+}
+
+ul{
+    display: flex;
+    align-items: right;
+}
+
+ul li{
+    list-style: none;
+    margin: auto;
+    padding: 25px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.2s ease-in-out;
+}
+
+ul li a:hover{
+    background-color: #2179B5;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 40px 10px 40px;
+    margin: 40px;
+}
+.aboutItem{
+    float: right; 
+    border-radius: 5px;
+    margin: 50px;
+    padding: 40px;
+    height: auto;
+    width: 40%;
+    background-color: whitesmoke;
+}
+.aboutItem h3{
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.aboutItem p{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 100px;
+    height: 130px;
+    padding: 10px;
+    margin-left: 40px;
+    border: 1px solid black;border-radius: 5px;
+    display:block;
+    
+}
+  
+  /* Style the images inside the grid */
+.column img { 
+    cursor: pointer; 
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+  
+.column img:hover {
+    opacity: 1;
+}
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display:block;
+    clear: both;
+}
+  
+  /* The expanding image container (positioning is needed to position the close button and the text) */
+.container {
+    float: left;
+    margin: 50px;
+    width: 40%;
+    height: 50%; 
+    display: block;   
+}
+.container img{
+    position:relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
