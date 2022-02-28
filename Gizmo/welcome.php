@@ -13,10 +13,10 @@
         <div class="navbar">
             <nav class="menu">
                 <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                    <li><a href="#">PROFILE</a></li>
+                    <li><a href="welcome.php">HOME</a></li>
+                    <li><a href="about.php">ABOUT</a></li>
+                    <li><a href="contact.php">CONTACT</a></li>
+                    <li><a href="profile.php">PROFILE</a></li>
                 </ul>
             </nav>
         </div>

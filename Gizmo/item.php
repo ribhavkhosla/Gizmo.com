@@ -1,7 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width-device-width initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
     <title>Gizmo.com/Product</title>
     <link rel="stylesheet" href="item.css">
 </head>
@@ -12,10 +15,10 @@
             <div class="menu">
                 <ul>
                     <li><img src="logo.png" width="200" height="50"></img></li>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                    <li><a href="#">PROFILE</a></li>
+                    <li><a href="welcome.php">HOME</a></li>
+                    <li><a href="about.php">ABOUT</a></li>
+                    <li><a href="contact.php">CONTACT</a></li>
+                    <li><a href="profile.php">PROFILE</a></li>
                 </ul>
             </div>
         </div>
