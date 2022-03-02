@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie-edge" />
     <title>Gizmo.com/Home</title>
     <link rel="stylesheet" href="welcome.css">
+    <?php
+    include('db_connect.php')
+    ?>
 </head>
 
 <body>
