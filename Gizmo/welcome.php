@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie-edge" />
     <title>Gizmo.com/Home</title>
     <link rel="stylesheet" href="welcome.css">
+    
 </head>
 
 <body>
@@ -60,7 +61,7 @@
     <div id="id01" class="modal">
         <span onclick="document.getElementById('id01').style.display='none'" class="close"
             title="Close Modal">&times;</span>
-        <form class="modal-content" action="/action_page.php">
+        <form class="modal-content" action="signup.php">
             <div class="container">
                 <h1>Sign Up</h1>
                 <br>
