@@ -3,7 +3,12 @@
 <head>
     <?php include('header.php')?>
     <title>Gizmo.com/Home</title>
+<<<<<<< HEAD:public/html_php/welcome.php
     <link rel="stylesheet" href="/public/css/welcome.css">
+=======
+    <link rel="stylesheet" href="welcome.css">
+    
+>>>>>>> 7f04f39199116b75e89f70437403a25e06c392e6:Gizmo/welcome.php
 </head>
 
 <body>
@@ -58,7 +63,7 @@
     <div id="id01" class="modal">
         <span onclick="document.getElementById('id01').style.display='none'" class="close"
             title="Close Modal">&times;</span>
-        <form class="modal-content" action="/action_page.php">
+        <form class="modal-content" action="signup.php">
             <div class="container">
                 <h1>Sign Up</h1>
                 <br>
