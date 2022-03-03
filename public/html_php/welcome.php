@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width-device-width initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <?php include('header.php')?>
     <title>Gizmo.com/Home</title>
-    <link rel="stylesheet" href="welcome.css">
+    <link rel="stylesheet" href="/public/css/welcome.css">
 </head>
 
 <body>
@@ -22,7 +20,7 @@
         </div>
         <hr>
         <div class="content">
-            <span><img src="logo.png" width="600" height="170"></span>
+            <span><img src="/Img/logo.png" width="600" height="170"></span>
             <h2>We deal in <br><span class="auto-input"></h2>
             <div class="form">
                 <h2>Sign In</h2>

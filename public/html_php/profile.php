@@ -2,11 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width-device-width initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie-edge" />
+    <?php include('header.php')?>
     <title>Gizmo.com/MyProfile</title>
-    <link rel="stylesheet" href="profile.css">
+    <link rel="stylesheet" href="/public/css/profile.css">
 </head>
 
 <body>
@@ -14,7 +12,7 @@
         <div class="navbar">
             <div class="menu">
                 <ul>
-                    <li><img src="logo.png" width="200" height="50"></img></li>
+                    <li><img src="/Img/logo.png" width="200" height="50"></img></li>
                     <li><a href="welcome.php">HOME</a></li>
                     <li><a href="about.php">ABOUT</a></li>
                     <li><a href="contact.php">CONTACT</a></li>
@@ -51,31 +49,31 @@
 
 
         <div class="infoBox">
-            <img src="1.png" alt="ad image">
+            <img src="/Img/1.png" alt="ad image">
             <text> Iphone 13 Pro Max</text>
         </div>
         <div class="infoBox">
-            <img src="1.png" alt="ad image">
+            <img src="/Img/1.png" alt="ad image">
             <text> Iphone 13 Pro Max</text>
         </div>
         <div class="infoBox">
-            <img src="1.png" alt="ad image">
+            <img src="/Img/1.png" alt="ad image">
             <text> Iphone 13 Pro Max</text>
         </div>
         <div class="infoBox">
-            <img src="1.png" alt="ad image">
+            <img src="/Img/1.png" alt="ad image">
             <text> Iphone 13 Pro Max</text>
         </div>
         <div class="infoBox">
-            <img src="1.png" alt="ad image">
+            <img src="/Img/1.png" alt="ad image">
             <text> Iphone 13 Pro Max</text>
         </div>
         <div class="infoBox">
-            <img src="1.png" alt="ad image">
+            <img src="/Img/1.png" alt="ad image">
             <text> Iphone 13 Pro Max</text>
         </div>
         <div class="infoBox">
-            <img src="1.png" alt="ad image">
+            <img src="/Img/1.png" alt="ad image">
             <text> Iphone 13 Pro Max</text>
         </div>
     </div>
