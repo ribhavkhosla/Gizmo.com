@@ -3,12 +3,7 @@
 <head>
     <?php include('header.php')?>
     <title>Gizmo.com/Home</title>
-<<<<<<< HEAD:public/html_php/welcome.php
     <link rel="stylesheet" href="/public/css/welcome.css">
-=======
-    <link rel="stylesheet" href="welcome.css">
-    
->>>>>>> 7f04f39199116b75e89f70437403a25e06c392e6:Gizmo/welcome.php
 </head>
 
 <body>
