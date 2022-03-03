@@ -4,7 +4,7 @@
         <?php include('header.php')?>
         <title>Gizmo.com/Choose</title>
 
-        <link rel = "stylesheet" href = "choose.css">
+        <link rel = "stylesheet" href = "/public/css/choose.css">
     </head>
 
     <body>

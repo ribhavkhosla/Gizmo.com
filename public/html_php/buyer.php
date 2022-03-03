@@ -4,7 +4,7 @@
 <head>
     <?php include('header.php')?>
     <title>Gizmo.com/ProductsPage</title>
-    <link rel="stylesheet" href="buyer.css">
+    <link rel="stylesheet" href="/public/css/buyer.css">
 </head>
 
 <body>
@@ -38,121 +38,121 @@
     <br>
 
     <div class="card">
-        <img src="1.png" width="70%" alt="Denim Jeans">
+        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
         <h4>Iphone 13 Pro Max</h4>
         <p class="price">$999.99</p>
         <p><button>View Ad</button></p>
     </div>
     <div class="card">
-        <img src="1.png" width="70%" alt="Denim Jeans">
+        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
         <h4>Iphone 13 Pro Max</h4>
         <p class="price">$999.99</p>
         <p><button>View Ad</button></p>
     </div>
     <div class="card">
-        <img src="1.png" width="70%" alt="Denim Jeans">
+        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
         <h4>Iphone 13 Pro Max</h4>
         <p class="price">$999.99</p>
         <p><button>View Ad</button></p>
     </div>
     <div class="card">
-        <img src="1.png" width="70%" alt="Denim Jeans">
+        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
         <h4>Iphone 13 Pro Max</h4>
         <p class="price">$999.99</p>
         <p><button>View Ad</button></p>
     </div>
     <div class="card">
-        <img src="1.png" width="70%" alt="Denim Jeans">
+        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
         <h4>Iphone 13 Pro Max</h4>
         <p class="price">$999.99</p>
         <p><button>View Ad</button></p>
     </div>
     <div class="card">
-        <img src="1.png" width="70%" alt="Denim Jeans">
+        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
         <h4>Iphone 13 Pro Max</h4>
         <p class="price">$999.99</p>
         <p><button>View Ad</button></p>
     </div>
     <div class="card">
-        <img src="1.png" width="70%" alt="Denim Jeans">
+        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
         <h4>Iphone 13 Pro Max</h4>
         <p class="price">$999.99</p>
         <p><button>View Ad</button></p>
     </div>
     <div class="card">
-        <img src="1.png" width="70%" alt="Denim Jeans">
+        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
         <h4>Iphone 13 Pro Max</h4>
         <p class="price">$999.99</p>
         <p><button>View Ad</button></p>
     </div>
     <div class="card">
-        <img src="1.png" width="70%" alt="Denim Jeans">
+        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
         <h4>Iphone 13 Pro Max</h4>
         <p class="price">$999.99</p>
         <p><button>View Ad</button></p>
     </div>
     <div class="card">
-        <img src="1.png" width="70%" alt="Denim Jeans">
+        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
         <h4>Iphone 13 Pro Max</h4>
         <p class="price">$999.99</p>
         <p><button>View Ad</button></p>
     </div>
     <div class="card">
-        <img src="1.png" width="70%" alt="Denim Jeans">
+        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
         <h4>Iphone 13 Pro Max</h4>
         <p class="price">$999.99</p>
         <p><button>View Ad</button></p>
     </div>
     <div class="card">
-        <img src="1.png" width="70%" alt="Denim Jeans">
+        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
         <h4>Iphone 13 Pro Max</h4>
         <p class="price">$999.99</p>
         <p><button>View Ad</button></p>
     </div>
     <div class="card">
-        <img src="1.png" width="70%" alt="Denim Jeans">
+        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
         <h4>Iphone 13 Pro Max</h4>
         <p class="price">$999.99</p>
         <p><button>View Ad</button></p>
     </div>
     <div class="card">
-        <img src="1.png" width="70%" alt="Denim Jeans">
+        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
         <h4>Iphone 13 Pro Max</h4>
         <p class="price">$999.99</p>
         <p><button>View Ad</button></p>
     </div>
     <div class="card">
-        <img src="1.png" width="70%" alt="Denim Jeans">
+        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
         <h4>Iphone 13 Pro Max</h4>
         <p class="price">$999.99</p>
         <p><button>View Ad</button></p>
     </div>
     <div class="card">
-        <img src="1.png" width="70%" alt="Denim Jeans">
+        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
         <h4>Iphone 13 Pro Max</h4>
         <p class="price">$999.99</p>
         <p><button>View Ad</button></p>
     </div>
     <div class="card">
-        <img src="1.png" width="70%" alt="Denim Jeans">
+        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
         <h4>Iphone 13 Pro Max</h4>
         <p class="price">$999.99</p>
         <p><button>View Ad</button></p>
     </div>
     <div class="card">
-        <img src="1.png" width="70%" alt="Denim Jeans">
+        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
         <h4>Iphone 13 Pro Max</h4>
         <p class="price">$999.99</p>
         <p><button>View Ad</button></p>
     </div>
     <div class="card">
-        <img src="1.png" width="70%" alt="Denim Jeans">
+        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
         <h4>Iphone 13 Pro Max</h4>
         <p class="price">$999.99</p>
         <p><button>View Ad</button></p>
     </div>
     <div class="card">
-        <img src="1.png" width="70%" alt="Denim Jeans">
+        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
         <h4>Iphone 13 Pro Max</h4>
         <p class="price">$999.99</p>
         <p><button>View Ad</button></p>

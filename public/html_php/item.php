@@ -4,7 +4,7 @@
 <head>
     <?php include('header.php')?>
     <title>Gizmo.com/Product</title>
-    <link rel="stylesheet" href="item.css">
+    <link rel="stylesheet" href="/public/css/item.css">
 </head>
 
 <body>
@@ -30,23 +30,23 @@
         </div>
 
         <div class="container">
-            <img src="1.png" id="expandedImg" alt="Item Image" style="width: 60%;">
+            <img src="/Img/1.png" id="expandedImg" alt="Item Image" style="width: 60%;">
             <img id="expandedImg" style="width:60%">
         </div>
 
         
         <div class="row">
             <div class="column">
-                <img src="1.png" style="width: 100%;" alt="Item Image" onclick="myFunction(this);">
+                <img src="/Img/1.png" style="width: 100%;" alt="Item Image" onclick="myFunction(this);">
             </div>
             <div class="column">
-                <img src="2.png" style="width: 100%;" alt="Item Image" onclick="myFunction(this);">
+                <img src="/Img/2.png" style="width: 100%;" alt="Item Image" onclick="myFunction(this);">
             </div>
             <div class="column">
-                <img src="3.png" style="width: 100%;" alt="Item Image" onclick="myFunction(this);">
+                <img src="/Img/3.png" style="width: 100%;" alt="Item Image" onclick="myFunction(this);">
             </div>
             <div class="column">
-                <img src="4.png" style="width: 100%;" alt="Item Image" onclick="myFunction(this);">
+                <img src="/Img/4.png" style="width: 100%;" alt="Item Image" onclick="myFunction(this);">
             </div>
         </div>
         
