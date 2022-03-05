@@ -49,9 +49,9 @@ We are using Postgresql as our database technology. For this deliverable we are 
 
 *Screenshots of database management tool PGadmin4*
 
-In our database we have one table called user_info which stores the data of all users. This data is updated when a user uses our signup form on the welcome page. Once they enter all their information and press the signup button all the data is saved in hte user_info table. Later on this table is used to verify the login credentials when the user sign in to his account.
+In our database we have one table called user_info which stores the data of all users. This data is updated when a user uses our signup form on the welcome page. Once they enter all their information and press the signup button all the data is saved in the user_info table. Later on this table is used to verify the login credentials when the user sign in to his account.
 
-One important step before we can use postgresql and Xampp together is that we have to enable pgsql on the Apache server configurations. To configre just remove the semicolon in from of the highlighted statements shown in the image below.
+One important step before we can use postgresql and Xampp together is that we have to enable pgsql in the Apache server configurations on Xampp control panel's config button for the Apache module. To configre just remove the semicolon in from of the highlighted statements shown in the image below.
 
 ![](/Img/screenshots/configApache.png)
 
@@ -105,5 +105,5 @@ If a user enters wrong credentials they are prompted to go back and try again.
 
 *Screenshots of signin error alert*
 
-**
+
 
