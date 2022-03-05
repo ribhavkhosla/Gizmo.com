@@ -33,12 +33,12 @@ Once Xampp is downloaded and the Xampp control panel is opened we will run the a
 
 To run the project please clone the repository to C:Xampp/htdocs. Run the webpages from https://localhost/project-gizmo. (PLEASE RUN IN INCOGNITO BROWSER TO AVOID COOKIES AS THEY CAN DESTROY CSS FILES.)
 
+After going to https://localhost/project-gizmo, go to public/html_php/welcome.php to run the website.
 
 ![](/Img/screenshots/localhostpage.png)
 
 *Screenshots of localhost/project-gizmo page*
 
-After going to https://localhost/project-gizmo, go to public/html_php/welcome.php to run the website.
 
 
 **Database Technology**
