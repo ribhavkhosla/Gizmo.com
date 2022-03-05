@@ -24,10 +24,18 @@
             <h2>We deal in <br><span class="auto-input"></h2>
             <div class="form" action="signin.php" method="POST">
                 <h2>Sign In</h2>
+<<<<<<< Updated upstream
                 <input type="email" name="email" placeholder="Email">
                 <input type="password" name="pswd" placeholder="Password">
                 <button class="btnn"><a href="#">Login</a></button>
 
+=======
+                <form action="signin.php" method="post">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="pswd" placeholder="Password" required>
+                    <button name = "signin" value="Login" type="submit" class="btnn"><a>Login</a></button>
+                </form>
+>>>>>>> Stashed changes
                 <p class="link">Or<br></p>
                 <button type="button" class="btnn1"
                     onclick="document.getElementById('id01').style.display = 'block'">Sign Up</button>
@@ -115,3 +123,15 @@
 </body>
 
 </html>
+   // namespace welcome;
+    // class User{
+    //     public static function hello($name=null)
+    //     {
+    //         $name = $name ?: "World";
+    //         return "Hello {$name}";
+    //     }
+
+    // }
+    
+
+
