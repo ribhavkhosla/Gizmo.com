@@ -4,7 +4,7 @@
 <head>
     <?php include('header.php')?>
     <title>Gizmo.com/ProductsPage</title>
-    <link rel="stylesheet" href="/public/css/buyer.css">
+    <link rel="stylesheet" href="/project-gizmo/public/css/buyer.css">
 </head>
 
 <body>
@@ -38,7 +38,97 @@
     <br>
 
     <div class="card">
-        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
+        <img src="/project-gizmo/Img/1.png" width="70%" alt="Denim Jeans">
+        <h4>Iphone 13 Pro Max</h4>
+        <p class="price">$999.99</p>
+        <p><button>View Ad</button></p>
+    </div>
+    <div class="card">
+        <img src="/project-gizmo/Img/1.png" width="70%" alt="Denim Jeans">
+        <h4>Iphone 13 Pro Max</h4>
+        <p class="price">$999.99</p>
+        <p><button>View Ad</button></p>
+    </div>
+    <div class="card">
+        <img src="/project-gizmo/Img/1.png" width="70%" alt="Denim Jeans">
+        <h4>Iphone 13 Pro Max</h4>
+        <p class="price">$999.99</p>
+        <p><button>View Ad</button></p>
+    </div>
+    <div class="card">
+        <img src="/project-gizmo/Img/1.png" width="70%" alt="Denim Jeans">
+        <h4>Iphone 13 Pro Max</h4>
+        <p class="price">$999.99</p>
+        <p><button>View Ad</button></p>
+    </div>
+    <div class="card">
+        <img src="/project-gizmo/Img/1.png" width="70%" alt="Denim Jeans">
+        <h4>Iphone 13 Pro Max</h4>
+        <p class="price">$999.99</p>
+        <p><button>View Ad</button></p>
+    </div>
+    <div class="card">
+        <img src="/project-gizmo/Img/1.png" width="70%" alt="Denim Jeans">
+        <h4>Iphone 13 Pro Max</h4>
+        <p class="price">$999.99</p>
+        <p><button>View Ad</button></p>
+    </div>
+    <div class="card">
+        <img src="/project-gizmo/Img/1.png" width="70%" alt="Denim Jeans">
+        <h4>Iphone 13 Pro Max</h4>
+        <p class="price">$999.99</p>
+        <p><button>View Ad</button></p>
+    </div>
+    <div class="card">
+        <img src="/project-gizmo/Img/1.png" width="70%" alt="Denim Jeans">
+        <h4>Iphone 13 Pro Max</h4>
+        <p class="price">$999.99</p>
+        <p><button>View Ad</button></p>
+    </div>
+    <div class="card">
+        <img src="/project-gizmo/Img/1.png" width="70%" alt="Denim Jeans">
+        <h4>Iphone 13 Pro Max</h4>
+        <p class="price">$999.99</p>
+        <p><button>View Ad</button></p>
+    </div>
+    <div class="card">
+        <img src="/project-gizmo/Img/1.png" width="70%" alt="Denim Jeans">
+        <h4>Iphone 13 Pro Max</h4>
+        <p class="price">$999.99</p>
+        <p><button>View Ad</button></p>
+    </div>
+    <div class="card">
+        <img src="/project-gizmo/Img/1.png" width="70%" alt="Denim Jeans">
+        <h4>Iphone 13 Pro Max</h4>
+        <p class="price">$999.99</p>
+        <p><button>View Ad</button></p>
+    </div>
+    <div class="card">
+        <img src="/project-gizmo/Img/1.png" width="70%" alt="Denim Jeans">
+        <h4>Iphone 13 Pro Max</h4>
+        <p class="price">$999.99</p>
+        <p><button>View Ad</button></p>
+    </div>
+    <div class="card">
+        <img src="/project-gizmo/Img/1.png" width="70%" alt="Denim Jeans">
+        <h4>Iphone 13 Pro Max</h4>
+        <p class="price">$999.99</p>
+        <p><button>View Ad</button></p>
+    </div>
+    <div class="card">
+        <img src="/project-gizmo/Img/1.png" width="70%" alt="Denim Jeans">
+        <h4>Iphone 13 Pro Max</h4>
+        <p class="price">$999.99</p>
+        <p><button>View Ad</button></p>
+    </div>
+    <div class="card">
+        <img src="/project-gizmo/Img/1.png" width="70%" alt="Denim Jeans">
+        <h4>Iphone 13 Pro Max</h4>
+        <p class="price">$999.99</p>
+        <p><button>View Ad</button></p>
+    </div>
+    <div class="card">
+        <img src="/project-gizmo/Img/1.png" width="70%" alt="Denim Jeans">
         <h4>Iphone 13 Pro Max</h4>
         <p class="price">$999.99</p>
         <p><button>View Ad</button></p>
@@ -50,7 +140,7 @@
         <p><button>View Ad</button></p>
     </div>
     <div class="card">
-        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
+        <img src="/project-gizmo/Img/1.png" width="70%" alt="Denim Jeans">
         <h4>Iphone 13 Pro Max</h4>
         <p class="price">$999.99</p>
         <p><button>View Ad</button></p>
@@ -62,97 +152,7 @@
         <p><button>View Ad</button></p>
     </div>
     <div class="card">
-        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
-        <h4>Iphone 13 Pro Max</h4>
-        <p class="price">$999.99</p>
-        <p><button>View Ad</button></p>
-    </div>
-    <div class="card">
-        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
-        <h4>Iphone 13 Pro Max</h4>
-        <p class="price">$999.99</p>
-        <p><button>View Ad</button></p>
-    </div>
-    <div class="card">
-        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
-        <h4>Iphone 13 Pro Max</h4>
-        <p class="price">$999.99</p>
-        <p><button>View Ad</button></p>
-    </div>
-    <div class="card">
-        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
-        <h4>Iphone 13 Pro Max</h4>
-        <p class="price">$999.99</p>
-        <p><button>View Ad</button></p>
-    </div>
-    <div class="card">
-        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
-        <h4>Iphone 13 Pro Max</h4>
-        <p class="price">$999.99</p>
-        <p><button>View Ad</button></p>
-    </div>
-    <div class="card">
-        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
-        <h4>Iphone 13 Pro Max</h4>
-        <p class="price">$999.99</p>
-        <p><button>View Ad</button></p>
-    </div>
-    <div class="card">
-        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
-        <h4>Iphone 13 Pro Max</h4>
-        <p class="price">$999.99</p>
-        <p><button>View Ad</button></p>
-    </div>
-    <div class="card">
-        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
-        <h4>Iphone 13 Pro Max</h4>
-        <p class="price">$999.99</p>
-        <p><button>View Ad</button></p>
-    </div>
-    <div class="card">
-        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
-        <h4>Iphone 13 Pro Max</h4>
-        <p class="price">$999.99</p>
-        <p><button>View Ad</button></p>
-    </div>
-    <div class="card">
-        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
-        <h4>Iphone 13 Pro Max</h4>
-        <p class="price">$999.99</p>
-        <p><button>View Ad</button></p>
-    </div>
-    <div class="card">
-        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
-        <h4>Iphone 13 Pro Max</h4>
-        <p class="price">$999.99</p>
-        <p><button>View Ad</button></p>
-    </div>
-    <div class="card">
-        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
-        <h4>Iphone 13 Pro Max</h4>
-        <p class="price">$999.99</p>
-        <p><button>View Ad</button></p>
-    </div>
-    <div class="card">
-        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
-        <h4>Iphone 13 Pro Max</h4>
-        <p class="price">$999.99</p>
-        <p><button>View Ad</button></p>
-    </div>
-    <div class="card">
-        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
-        <h4>Iphone 13 Pro Max</h4>
-        <p class="price">$999.99</p>
-        <p><button>View Ad</button></p>
-    </div>
-    <div class="card">
-        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
-        <h4>Iphone 13 Pro Max</h4>
-        <p class="price">$999.99</p>
-        <p><button>View Ad</button></p>
-    </div>
-    <div class="card">
-        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
+        <img src="/project-gizmo/Img/1.png" width="70%" alt="Denim Jeans">
         <h4>Iphone 13 Pro Max</h4>
         <p class="price">$999.99</p>
         <p><button>View Ad</button></p>

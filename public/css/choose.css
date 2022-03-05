@@ -32,6 +32,12 @@
 
 
 }
+button a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
 
 .main{
     width: 100%;

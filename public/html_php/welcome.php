@@ -3,7 +3,7 @@
 <head>
     <?php include('header.php')?>
     <title>Gizmo.com/Home</title>
-    <link rel="stylesheet" href="/public/css/welcome.css">
+    <link rel="stylesheet" href="/project-gizmo/public/css/welcome.css">
 </head>
 
 <body>
@@ -20,14 +20,15 @@
         </div>
         <hr>
         <div class="content">
-            <span><img src="/Img/logo.png" width="600" height="170"></span>
+            <span><img src="/project-gizmo/Img/logo.png" width="600" height="170"></span>
             <h2>We deal in <br><span class="auto-input"></h2>
             <div class="form">
                 <h2>Sign In</h2>
-                <input type="email" name="email" placeholder="Email">
-                <input type="password" name="" placeholder="Password">
-                <button class="btnn"><a href="#">Login</a></button>
-
+                <form action="signin.php" method="post">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="pswd" placeholder="Password" required>
+                    <button name = "signin" value="Login" type="submit" class="btnn"><a>Login</a></button>
+                </form>
                 <p class="link">Or<br></p>
                 <button type="button" class="btnn1"
                     onclick="document.getElementById('id01').style.display = 'block'">Sign Up</button>
@@ -58,7 +59,7 @@
     <div id="id01" class="modal">
         <span onclick="document.getElementById('id01').style.display='none'" class="close"
             title="Close Modal">&times;</span>
-        <form class="modal-content" action="signup.php">
+        <form class="modal-content" action="signup.php" method="post">
             <div class="container">
                 <h1>Sign Up</h1>
                 <br>
@@ -82,13 +83,10 @@
                 <label for="psw"><b>Password</b><br></label>
                 <input type="password" placeholder="Enter Password" name="psw" required><br>
 
-                <label for="psw-repeat"><b>Repeat Password</b><br></label>
-                <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-
                 <div class="clearfix">
                     <button type="button" onclick="document.getElementById('id01').style.display='none'"
                         class="cancelbtn">Cancel </button>
-                    <button type="submit" class="signupbtn">Sign Up</button>
+                    <button type="submit" value="Save" name="signup" class="signupbtn">Sign Up</button>
                 </div>
             </div>
         </form>
@@ -118,3 +116,15 @@
 </body>
 
 </html>
+   // namespace welcome;
+    // class User{
+    //     public static function hello($name=null)
+    //     {
+    //         $name = $name ?: "World";
+    //         return "Hello {$name}";
+    //     }
+
+    // }
+    
+
+
