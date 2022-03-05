@@ -10,8 +10,8 @@
     <body>
         <?php include('nav.php')?>
         <div class="heading"> How can we help you today?</div>
-        <button class="marginL">Post an Ad</button>
-        <button class="marginR">Buy Stuff</button>
+        <button class="marginL"><a href="postad.php">Post an Ad</a></button>
+        <button class="marginR"><a href="buyer.php">Buy Stuff</a></button>
         </div>
 
     </body>
