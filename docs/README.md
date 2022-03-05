@@ -30,7 +30,7 @@ The Xampp setup is very straight forward. Once downloaded just follow the steps 
 
 Once Xampp is downloaded and the Xampp control panel is opened we will run the apache server on our localhost. For now we will be running our project on the localhost only instead of any other web server.
 
-To run the project we have to change the directory of the project. We have to move the whole project to C:Xampp/htdocs/...... . We can now run our webpages from https://localhost/project-gizmo.
+To run the project we have to change the directory of the project. please clone the repository to C:Xampp/htdocs/...... . Run the webpages from https://localhost/project-gizmo.
 
 
 ![](/Img/screenshots/welcome2.png)
