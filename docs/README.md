@@ -12,15 +12,12 @@ The deliverable 3 includes all the technologies we used for our project. There a
 1. Server Technology
 2. Database Technology
 3. Automated Test Framework
-4. Deployment and Upgrade Scripts
-5. Refined HTML/CSS + UI design systems
-6. Front-end interactivity using JavaScript
+4. Refined HTML/CSS + UI design systems
+5. Front-end interactivity using JavaScript
 
 **Server Technology**
 
-![](/Img/screenshots/welcome.png)
 
-*Screenshot of welcome.html*
 
 We are using Xampp web server solution software for running our php on the Apache web server.
 
@@ -30,66 +27,35 @@ The Xampp setup is very straight forward. Once downloaded just follow the steps 
 
 Once Xampp is downloaded and the Xampp control panel is opened we will run the apache server on our localhost. For now we will be running our project on the localhost only instead of any other web server.
 
-To run the project we have to change the directory of the project. please clone the repository to C:Xampp/htdocs/...... . Run the webpages from https://localhost/project-gizmo.
+![](/Img/screenshots/xampp.png)
+
+*Screenshot of Xampp control panel*
+
+To run the project please clone the repository to C:Xampp/htdocs. Run the webpages from https://localhost/project-gizmo. (PLEASE RUN IN INCOGNITO BROWSER TO AVOID COOKIES AS THEY CAN DESTROY CSS FILES.)
 
 
-![](/Img/screenshots/welcome2.png)
+![](/Img/screenshots/localhostpage.png)
 
-*Screenshots of welcome.html*
+*Screenshots of localhost/project-gizmo page*
 
-![](/Img/screenshots/signup.png)
+After going to https://localhost/project-gizmo, go to public/html_php/welcome.php to run the website.
 
-*Screenshots of the popup when “Sign Up” is clicked on welcome.html*
-
-On the signup popup the user can register an account for himself.
-
-![](/Img/screenshots/choose.png)
-
-*Screenshots of choose.html*
-
-On the *choose.html* page a user is given an option to choose if he is looking to buy something or sell something. If he clicks on “Post an Ad” he will be taken to the *postad.html* page and if he clicks on “Buy Stuff” he will be taken to the *buyer.html* page.
-
-![](/Img/screenshots/postad.png)
-
-*Screenshots of postad.html*
-
-On *postad.html* the user can create an ad for something he wants to sell. He can click on the “Post Ad” button to publish the ad or he can click the  “Previous” button to go back to the *choose.html* page.
-
-![](/Img/screenshots/buyer.png)
-
-*Screenshots of buyer.html*
-
-On the *buyer.html* page the user can see all the available items for sale on the website and he has the option to choose a category from the “Choose your category” dropdown menu. Clicking on the “View Ad ” button will take the user to the product page of the item he selected with a full description and images of the item, which here is depicted by *item.html*.
-
-![](/Img/screenshots/item.png)
-
-*Screenshots of item.html*
-
-The *item.html* page will show the description and images of a particular item, in this case, the item is an iphone. The 4 images in the bottom tab are clickable. If clicked an image is enlarged on the block above.
-
-![](/Img/screenshots/contact.png)
-
-*Screenshots of contact.html*
-
-This is a form that will send an email with the message from the user to the owners of the website.
-
-![](/Img/screenshots/about.png)
-
-*Screenshots of about.html*
-
-The about.html page gives the details about the website and the company.
-
-![](/Img/screenshots/profile.png)
-
-*Screenshots of profile.html*
 
 **Database Technology**
 
 We are using Postgresql as our database technology. For this deliverable we are successfully connecting our webpages to our database server and are monitoring it using PGADMIN4. 
 
+![](/Img/screenshots/pgadmin.png)
+
+*Screenshots of database management tool PGadmin4*
+
 In our database we have one table called user_info which stores the data of all users. This data is updated when a user uses our signup form on the welcome page. Once they enter all their information and press the signup button all the data is saved in hte user_info table. Later on this table is used to verify the login credentials when the user sign in to his account.
 
-One important step before we can use postgresql and Xampp together is that we have to enable pgsql on the Apache server configurations. ........
+One important step before we can use postgresql and Xampp together is that we have to enable pgsql on the Apache server configurations. To configre just remove the semicolon in from of the highlighted statements shown in the image below.
+
+![](/Img/screenshots/configApache.png)
+
+*Screenshots of pgsql apache configuration changes*
 
 
 **Automated Testing Frameworks**
@@ -101,21 +67,43 @@ composer require --dev phpunit/phpunit ^9
 
 Prerequsite: "Composer" should be already installed on your computer. If not follow steps on : https://getcomposer.org/download/.
 
+Our automated testing code runs the Hello World test which was based on samplephp provided by Professor Forward.
 
-**Deployment/Upgrade Scripts**
-
-This part show how to deploy the project from the terminal.
 
 
 
 **Refined HTML/CSS + UI Design Systems**
 
-Our UI design was already up to date so there were no major changes required for this deliverable. We had already implemeted alot of functionality in our UI including some javascript functionality for the deliverable 2. One of the update in our UI is that all the navigation buttons now functional.
+Our UI design was already up to date so there were no major changes required for this deliverable. We had already implemeted alot of javascript functionality in our UI for deliverable 2. One of the update in our UI is that all the navigation buttons now functional. The buttons are:
+
+● Login on welcome.php
+● Sign Up on welcome.php
+● Post an Ad on choose.php
+● Buy Stuff on choose.php
+● Previous on postad.php
+● Post Ad on postad.php
+● View Ad on buyer.php
+● Clear on contact.php
+● Submit on contact.php
 
 
-**Front-end Interactivy Using Javascript**
+**Front-end Interactivty Using Javascript**
 
-We have successfully configured the signup and the signin page with a fully functional database system.
+We have successfully configured the signup and the signin page with a fully functional database system. A user can go to the home page and signup for an account. After successful signup the user is then taken back to the home page and they can sign in successfully. After signing in the user is taken to the choose.php page.
+
+![](/Img/screenshots/signup.png)
+
+*Screenshots of signup popup*
+
+![](/Img/screenshots/signin.png)
+
+*Screenshots of signin section on the home page*
+
+If a user enters wrong credentials they are prompted to go back and try again.
+
+![](/Img/screenshots/signinerror.png)
+
+*Screenshots of signin error alert*
 
 **
 
