@@ -22,7 +22,7 @@
         <div class="content">
             <span><img src="/project-gizmo/Img/logo.png" width="600" height="170"></span>
             <h2>We deal in <br><span class="auto-input"></h2>
-            <div class="form">
+            <div class="form" action="signin.php" method="POST">
                 <h2>Sign In</h2>
                 <form action="signin.php" method="post">
                     <input type="email" name="email" placeholder="Email" required>

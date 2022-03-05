@@ -3,7 +3,6 @@
 <head>
     <?php include('header.php')?>
     <title>Gizmo.com/PostAd</title>
-
     <link rel="stylesheet" href="/project-gizmo/public/css/postad.css">
 </head>
 <body>
