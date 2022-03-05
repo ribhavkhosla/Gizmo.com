@@ -3,10 +3,6 @@
 <head>
     <?php include('header.php')?>
     <title>Gizmo.com/PostAd</title>
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
     <link rel="stylesheet" href="/project-gizmo/public/css/postad.css">
 </head>
 <body>
