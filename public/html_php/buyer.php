@@ -134,7 +134,7 @@
         <p><button>View Ad</button></p>
     </div>
     <div class="card">
-        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
+        <img src="/project-gizmo/Img/1.png" width="70%" alt="Denim Jeans">
         <h4>Iphone 13 Pro Max</h4>
         <p class="price">$999.99</p>
         <p><button>View Ad</button></p>
@@ -146,7 +146,7 @@
         <p><button>View Ad</button></p>
     </div>
     <div class="card">
-        <img src="/Img/1.png" width="70%" alt="Denim Jeans">
+        <img src="/project-gizmo/Img/1.png" width="70%" alt="Denim Jeans">
         <h4>Iphone 13 Pro Max</h4>
         <p class="price">$999.99</p>
         <p><button>View Ad</button></p>
