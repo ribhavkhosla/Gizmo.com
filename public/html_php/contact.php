@@ -11,8 +11,7 @@
 
             <h1>Please fill out the form below to reach out to us.</h1>
 
-            <form>
-                <div class="content">
+            <form class="content" action="contact_db.php" method="post">
                     <br>
                     <label for="name"><b>Name</b></label>
                     <input type="text" placeholder="Enter your name" name="name" required>
@@ -26,7 +25,6 @@
     
                     <input type="reset" value="Clear">
                     <input type="submit" value="Submit">
-                </div>
             </form>
         </div>
     </body>

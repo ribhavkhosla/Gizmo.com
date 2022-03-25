@@ -24,7 +24,7 @@
             <h2>We deal in <br><span class="auto-input"></h2>
             <div class="form" action="signin.php" method="POST">
                 <h2>Sign In</h2>
-                <form action="signin.php" method="post">
+                <form action="signin_db.php" method="post">
                     <input type="email" name="email" placeholder="Email" required>
                     <input type="password" name="pswd" placeholder="Password" required>
                     <button name = "signin" value="Login" type="submit" class="btnn"><a>Login</a></button>
@@ -59,7 +59,7 @@
     <div id="id01" class="modal">
         <span onclick="document.getElementById('id01').style.display='none'" class="close"
             title="Close Modal">&times;</span>
-        <form class="modal-content" action="signup.php" method="post">
+        <form class="modal-content" action="signup_db.php" method="post">
             <div class="container">
                 <h1>Sign Up</h1>
                 <br>
@@ -116,15 +116,6 @@
 </body>
 
 </html>
-   // namespace welcome;
-    // class User{
-    //     public static function hello($name=null)
-    //     {
-    //         $name = $name ?: "World";
-    //         return "Hello {$name}";
-    //     }
 
-    // }
-    
 
 

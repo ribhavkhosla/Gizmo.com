@@ -9,7 +9,7 @@
     <div class="main">
         <?php include('nav.php')?>
         
-        <form class="form">
+        <form class="form" action="postad_db.php" method="post">
             <div class="content">
                 <h1>Post an Ad</h1>
                 <br>
@@ -48,7 +48,7 @@
                 <input type="text" placeholder="Enter Contact Information" name="contact" required>
 
                 <input type="button" value="Previous">
-                <input type="submit" value="Post Ad">
+                <input type="submit" name="ad" value="Post Ad">
             </div>
         </form>
 
