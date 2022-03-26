@@ -1,6 +1,7 @@
 <?php
     session_start();
     include_once 'postad_db.php';
+    include_once 'signin_db.php';
 
 ?>
 
@@ -15,8 +16,9 @@
 <body>
     <div class="main">
         <?php include('nav.php')?>
-        
-        <form class="form" action="postad_db.php" method="post" enctype="multipart.form-data">
+        <?php
+        if(isset($_SESSION['uId'])){
+            echo '<form class="form" action="postad_db.php" method="post" enctype="multipart.form-data">
             <div class="content">
                 <h1>Post an Ad</h1>
                 <br>
@@ -60,7 +62,14 @@
                 <input type="button" value="Previous">
                 <input type="submit" name="ad" value="Post Ad">
             </div>
-        </form>
+        </form>';
+        }
+        else{
+            echo '<div class="echo">You need to sign in to post an ad.<br>
+            Click Home to sign in or make an account<div>';
+        }
+        ?>
+        
 
     </div>
 </body>

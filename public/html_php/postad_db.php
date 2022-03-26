@@ -12,7 +12,7 @@ if(isset($_POST["ad"]) && $_POST["ad"]=="Post Ad"){
     $result = pg_query($conn, "SELECT * FROM advertisement");
     $id = pg_num_rows($result);
     $id += 1;
-    $query = "INSERT INTO advertisement values('$id', '$tname', '$price', '$condition', '$category', '$desc', '$location', '$contact')";
+    $query = "INSERT INTO advertisement values('$id', '$tname', '$price', '$condition', '$category', '$desc', '$location', '$contact', '$id')";
     $res = pg_query($conn, $query);
     if($res){
         header("location:buyer.php");

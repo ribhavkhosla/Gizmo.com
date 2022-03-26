@@ -79,6 +79,10 @@ ul li a:hover{
 
 }
 
+.echo{
+  text-align: center;
+  font-size: 40px;
+}
 .content input[type="button"]{
   background-color: white;
   width: 30%;
