@@ -8,10 +8,13 @@
         $res = pg_query($conn, $query);
         $usrArr = pg_fetch_all_columns($res, pg_field_num($res, 'email'));
         $pswArr = pg_fetch_all_columns($res, pg_field_num($res, 'password'));
+        $idArr = pg_fetch_all_columns($res, pg_field_num($res, 'userid'));
         for($i = 0; $i < count($usrArr); $i++)
         {
             if($email == $usrArr[$i] && $pswd == $pswArr[$i])
             {
+                session_start();
+                $_SESSION['uId'] = $idArr[$i];
                 header("location: choose.php");
             }
         }
