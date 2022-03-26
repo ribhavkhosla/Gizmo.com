@@ -10,7 +10,7 @@
     <div class="main">
         <?php include('nav.php')?>
         
-        <form class="form" action="postad_db.php" method="post">
+        <form class="form" action="postad_db.php" method="post" enctype="multipart.form-data">
             <div class="content">
                 <h1>Post an Ad</h1>
                 <br>
@@ -48,11 +48,9 @@
                 <label for="contact"><b>Contact Information</b></label>
                 <input type="text" placeholder="Enter Contact Information" name="contact" required>
 
-                <form action="upload.php" method="POST" enctype="multipart.form-data">
-                    <input type="file" name="file">
-                    <button type="submit" name="submit">UPLOAD IMAGE</button>
-                </form>
-
+                <label for="image"><b>Choose Image</b></label>
+                <input type="file" name="file">
+                
                 <input type="button" value="Previous">
                 <input type="submit" name="ad" value="Post Ad">
             </div>

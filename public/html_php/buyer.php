@@ -36,22 +36,12 @@
 
     <br>
     <br>
+    <div id="container"></div>
     <script>
-        // //var imp = document.createElement("container");
-        var impo = document.getElementById("container");
-        function wipe(val){
-            impo.remove()
-            onLoad(category(val));
-            
-        }
         
-
         function onLoad(arr){
-            console.log(arr.length);
-            var imp = document.createElement("div");
-            imp.id = "container";
-            for(i = 0; i< arr.length; i++){
-                var t = document.getElementById("container");
+            for(i = 0; i< 20; i++){
+                var imp = document.getElementById("container");
                 var divs = document.createElement("div");
                 var image = document.createElement("img");
                 var head4 = document.createElement("h4");
@@ -72,7 +62,7 @@
                 divs.appendChild(para);
                 divs.appendChild(bttn);
 
-                t.appendChild(divs);
+                imp.appendChild(divs);
             }
         }
 
