@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    include_once 'signin_db.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -9,10 +13,19 @@
 
     <body>
         <?php include('nav.php')?>
-        <div class="heading"> How can we help you today?</div>
-        <button class="marginL"><a href="postad.php">Post an Ad</a></button>
-        <button class="marginR"><a href="buyer.php">Buy Stuff</a></button>
-        </div>
+        <?php
+        if (isset($_SESSION['uId'])){
+            echo'
+            <div class="heading"> Hello there ' . $_SESSION['uname'].' <br> How can we help you today?</div>
+            <button class="marginL"><a href="postad.php">Post an Ad</a></button>
+            <button class="marginR"><a href="buyer.php">Buy Stuff</a></button>
+            </div>';
+        }
+        else{
+            echo '<p>You need to sign in to access this page.</p>';
+        }
+        ?>
+       
 
     </body>
 </html>

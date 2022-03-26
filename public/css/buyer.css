@@ -85,6 +85,7 @@ ul li a:hover{
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
     width: 250px;
+    height: auto;
     margin-left: 3%;
     margin-bottom: 3%;
     padding: 20px;
@@ -94,7 +95,27 @@ ul li a:hover{
     display: inline-block;
     *display: inline;   
 }
+.box {
+    float: left;
+    width: 100px;
+    height: 130px;
+    padding: 10px;
+    margin-left: 40px;
+    border: 1px solid black;border-radius: 5px;
+    display:block;
 
+}
+
+.box img { 
+    cursor: pointer; 
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+ 
 .price {
     color: grey;
     font-size: 20px;

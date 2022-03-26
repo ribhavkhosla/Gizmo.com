@@ -46,21 +46,26 @@ session_start();
             for(i = 0; i< 20; i++){
                 var imp = document.getElementById("container");
                 var divs = document.createElement("div");
+                var box = document.createElement("div");
                 var image = document.createElement("img");
                 var head4 = document.createElement("h4");
                 var para = document.createElement("p");
                 var bttn = document.createElement("button");
                 
+                box.className = 'imageBox'
                 divs.className = 'card';
                 para.className = 'price';
                 image.src = arr[i].image;
-                image.width = "200";
+                box.width = "200";
+                box.height = "500";
+                image.width="200";
                 
                 head4.innerHTML = arr[i].title;
                 para.innerHTML = arr[i].price;
 
                 bttn.innerHTML = "View Ad";
-                divs.appendChild(image);
+                box.appendChild(image);
+                divs.appendChild(box);
                 divs.appendChild(head4);
                 divs.appendChild(para);
                 divs.appendChild(bttn);
