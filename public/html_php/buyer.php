@@ -43,7 +43,7 @@ session_start();
     <script>
         
         function onLoad(arr){
-            for(i = 0; i< 20; i++){
+            for(i = 0; i< arr.length; i++){
                 var imp = document.getElementById("container");
                 var divs = document.createElement("div");
                 var box = document.createElement("div");

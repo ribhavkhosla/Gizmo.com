@@ -95,18 +95,17 @@ ul li a:hover{
     display: inline-block;
     *display: inline;   
 }
-.box {
+.imageBox {
     float: left;
-    width: 100px;
-    height: 130px;
+    width: 200px;
+    height: 250px;
     padding: 10px;
-    margin-left: 40px;
-    border: 1px solid black;border-radius: 5px;
+    margin-left: 20px;
     display:block;
 
 }
 
-.box img { 
+.imageBox img { 
     cursor: pointer; 
     position: relative;
     top: 50%;
