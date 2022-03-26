@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    include_once 'signin_db.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

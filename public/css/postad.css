@@ -75,19 +75,18 @@ ul li a:hover{
   color: white;
   font-weight: bold;
   font-family: 'Times New Roman', Times, serif;
-
-
 }
 
 .echo{
   text-align: center;
   font-size: 40px;
 }
-.content input[type="button"]{
+.content button{
   background-color: white;
   width: 30%;
   font-size: 15px;
   color: black;
+  padding: 10px;
   font-weight: bold;
   font-family: 'Times New Roman', Times, serif;
 

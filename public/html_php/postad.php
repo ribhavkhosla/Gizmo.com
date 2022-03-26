@@ -59,14 +59,14 @@
                 <label for="image"><b>Choose Image</b></label>
                 <input type="file" name="file">
                 
-                <input type="button" value="Previous">
+                <a href="choose.php"><button type="button"> Previous</button></a>
                 <input type="submit" name="ad" value="Post Ad">
             </div>
         </form>';
         }
         else{
             echo '<div class="echo">You need to sign in to post an ad.<br>
-            Click Home to sign in or make an account<div>';
+            Click Home to sign in or make an account.<div>';
         }
         ?>
         

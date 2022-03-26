@@ -46,6 +46,10 @@ ul li a:hover{
     padding: 10px 40px 10px 40px;
     margin: 40px;
 }
+.echo{
+    text-align: center;
+    font-size: 40px;
+  }
 
 .infoBox{
     border: 1px solid black;

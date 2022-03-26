@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    include_once 'signin_db.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -24,7 +28,7 @@
     
     
                     <input type="reset" value="Clear">
-                    <input type="submit" value="Submit">
+                    <button type="submit" name="submit" value="submit">Submit</button>
             </form>
         </div>
     </body>

@@ -65,13 +65,15 @@ h1{
     box-sizing: border-box;
   }
   
-  .content input[type="submit"]{
+  .content button{
     background-color: green;
     width: 30%;
+    height: 50px;
     font-size: 15px;
     color: white;
     font-weight: bold;
     float: right;
+    margin-top: 10px;
     margin-right: 100px;
     font-family: 'Times New Roman', Times, serif;
 
