@@ -38,16 +38,10 @@
                 //     }
                 // }
                 if (isset($_SESSION['uId'])){
-                    echo'
-                    <div class="log" action="signin.php" method="POST">
-                        <h2>Hello ' . $_SESSION['uname']. '!</h2>
-                        <br>
-                        <h4>You are currently signed in.</h4>
-                        <form action="logout.php" method="post">
-                            <button type="submit" name="logout-submit">Logout</button>
-                        </form>
-                    </div>
-                    ';
+                    echo'<p>Hello there' . $_SESSION['uname'].' </p>
+                         <form action="logout.php" method="post">
+                        <button type="submit" name="logout-submit">Logout</button>
+                    </form>';
                 }else{
                     echo "<div class='form' action='signin.php' method='POST'>
                         <h2>Sign In</h2>
