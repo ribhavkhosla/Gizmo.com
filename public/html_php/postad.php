@@ -17,8 +17,7 @@
     <div class="main">
         <?php include('nav.php')?>
         <?php
-
-        $sql ="SELECT * FROM user_info";
+        $sql = "SELECT * FROM user_info";
         $result=pq_query($conn, $sql);
         if (pg_num_rows($result) > 0){
             while ($row = pq_fetch_all_columns)
@@ -76,8 +75,6 @@
             Click Home to sign in or make an account<div>';
         }
         ?>
-        
-
     </div>
 </body>
 </html>
