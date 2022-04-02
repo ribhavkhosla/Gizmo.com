@@ -17,9 +17,6 @@
     <div class="main">
         <?php include('nav.php')?>
         <?php
-        $sql = "SELECT * FROM user_info";
-        $result=pq_query($conn, $sql);
-
         if(isset($_SESSION['uId'])){
             echo '<form class="form" action="postad_db.php" method="post" enctype="multipart.form-data">
             <div class="content">

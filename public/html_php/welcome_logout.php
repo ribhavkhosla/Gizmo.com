@@ -10,8 +10,7 @@
             <form action="logout.php" method="post">
                 <button type="submit" name="logout-submit">Logout</button>
             </form>
-        </div>
-        ';
+        </div>';
     }else{
         echo "<div class='form' action='signin.php' method='POST'>
             <h2>Sign In</h2>

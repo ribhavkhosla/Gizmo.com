@@ -3,7 +3,7 @@
 <html lang='en'>
 <head>
     <?php include('header.php')?>
-    <?php include('autofill.php') ?>
+    <?php include('autofill.php')?>
     <title>Gizmo.com/Home</title>
     <link rel='stylesheet' href='/project-gizmo/public/css/welcome.css'>
 </head>
