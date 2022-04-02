@@ -26,19 +26,19 @@
                     <br>
                     <br>
                     <h3>Name</h3>
-                    <p>John Doe</p>
+                    <p>'.$_SESSION['uname'].'</p>
                     <br>
                     <h3>Phone Number</h3>
-                    <p>+1(343)-XXX-XXXX</p>
+                    <p>+'.$_SESSION['phone'].'</p>
                     <br>
                     <h3>Home Address</h3>
-                    <p>100 Sandy Ave, Ottawa, ON, Canada </p>
+                    <p>'.$_SESSION['address'].' </p>
                     <br>
                     <h3>Email</h3>
-                    <p>randomrandom@email.com</p>
+                    <p>'.$_SESSION['email'].'</p>
                     <br>
                     <h3>Password</h3>
-                    <p>qwertyuiop</p>
+                    <p>'.$_SESSION['pass'].'</p>
                 </div>
 
 

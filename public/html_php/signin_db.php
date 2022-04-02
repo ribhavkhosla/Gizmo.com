@@ -7,6 +7,9 @@
         $query = "SELECT * FROM user_info";
         $res = pg_query($conn, $query);
         $nameArr = pg_fetch_all_columns($res, pg_field_num($res, 'firstname'));
+        $lnameArr = pg_fetch_all_columns($res, pg_field_num($res, 'lastname'));
+        $addArr = pg_fetch_all_columns($res, pg_field_num($res, 'address'));
+        $phoneArr = pg_fetch_all_columns($res, pg_field_num($res, 'phone'));
         $usrArr = pg_fetch_all_columns($res, pg_field_num($res, 'email'));
         $pswArr = pg_fetch_all_columns($res, pg_field_num($res, 'password'));
         $idArr = pg_fetch_all_columns($res, pg_field_num($res, 'userid'));
@@ -17,6 +20,11 @@
                 session_start();
                 $_SESSION['uId'] = $idArr[$i];
                 $_SESSION['uname'] = $nameArr[$i];
+                $_SESSION['lname'] = $lnameArr[$i];
+                $_SESSION['pass'] = $pswArr[$i];
+                $_SESSION['phone'] = $phoneArr[$i];
+                $_SESSION['address'] = $addArr[$i];
+                $_SESSION['email'] = $usrArr[$i];
                 header("location: choose.php");
             }
         }
