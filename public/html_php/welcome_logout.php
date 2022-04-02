@@ -22,7 +22,7 @@
             </form>
             <p class='link'>Or<br></p>
             <button type='button' class='btnn1'
-                onclick='document.getElementById('id01').style.display = 'block''>Sign Up</button>
+                onclick=\"document.getElementById('id01').style.display = 'block'\">Sign Up</button>
             <p class='liw'>Log in with</p>
 
             <div class='icons'>

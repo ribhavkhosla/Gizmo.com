@@ -19,9 +19,6 @@
         <?php
         $sql = "SELECT * FROM user_info";
         $result=pq_query($conn, $sql);
-        if (pg_num_rows($result) > 0){
-            while ($row = pq_fetch_all_columns)
-        }
 
         if(isset($_SESSION['uId'])){
             echo '<form class="form" action="postad_db.php" method="post" enctype="multipart.form-data">
