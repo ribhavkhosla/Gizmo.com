@@ -3,6 +3,7 @@
 <html lang='en'>
 <head>
     <?php include('header.php')?>
+    <?php include('autofill.php') ?>
     <title>Gizmo.com/Home</title>
     <link rel='stylesheet' href='/project-gizmo/public/css/welcome.css'>
 </head>
@@ -46,7 +47,7 @@
                 <input type='text' placeholder='Enter Phone Number' name='phone' required><br>
 
                 <label for='address'><b>Home Address</b><br></label>
-                <input type='text' placeholder='Enter Home Address' name='address' required><br>
+                <input id="autofill" type='text' placeholder='Enter Home Address' name='address' required><br>
 
                 <label for='email'><b>Email</b><br></label>
                 <input type='text' placeholder='Enter Email' name='email' required><br>
