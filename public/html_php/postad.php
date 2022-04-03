@@ -63,7 +63,7 @@ include_once 'signin_db.php';
                 <input type="text" placeholder="Enter Contact Information" name="contact" required>
 
                 <label for="image"><b>Choose Image</b></label>
-                <input type="file" name="file">
+                <input type="file" name="file_img">
                 
                 <a href="choose.php"><input type="button" value="Previous"></a>
                 
