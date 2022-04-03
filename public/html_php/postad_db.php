@@ -22,22 +22,22 @@ if(isset($_SESSION['uId'])){
             header("Location:buyer.php?youradissuccessfullyposted");
         }
         $file  = $_FILES['file'];
-        $fileName = $_FILES['file']['name'];
-        $fileTMPName = $_FILES['file']['tmp_name'];
-        $fileSize = $_FILES['file']['size'];
-        $fileError = $_FILES['file']['error'];
-        $fileType = $_FILES['file']['type'];
+        $fileName = $file['name'];
+        $fileTMPName = $file['tmp_name'];
+        $fileSize = $file['size'];
+        $fileError = $file['error'];
+        $fileType = $file['type'];
         
-        $fileExt  = explode('.', $filename);
+        $fileExt  = explode(".", $filename);
         $fileActualExt = strtolower(end($fileExt));
     
-        $allowed = array('jpg', 'jpeg', 'png');
+        $allowed = array("jpg", "jpeg", "png");
     
         if(in_array($fileActualExt, $allowed)){
             if($fileError === 0){
-                if(!$fileSize > 10){
-                    $fileNameNew = "adImg".$id.".".$fileActualExt;
-                    $fileDestination = 'uploads/'.$fileNameNew;
+                if($fileSize < 2000000){
+                    $fileNameNew = "adImg". "-" . $id . "." . $fileActualExt;
+                    $fileDestination = "../adImages/" . $fileNameNew;
                     move_uploaded_file($fileTMPName, $fileDestination);
                     $query = "INSERT INTO advertisement values('$id', '$tname', '$price', '$condition', '$category', '$desc', '$location', '$contact', '$id')";
                     $res = pg_query($conn, $query);
@@ -46,13 +46,19 @@ if(isset($_SESSION['uId'])){
                     }
                 }else{
                     echo "Your file is too big";
+                    exit();
                 }
             }else{
                 echo "There was an error uploading your image";
-
-        
+                exit();
+            }
+        }else{
+            echo "Only jpg, jpeg and png files are allowed. ";
+            exit();
+        }
     
     }
 }
+
 
 
