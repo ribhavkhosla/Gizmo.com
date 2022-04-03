@@ -16,11 +16,7 @@ if(isset($_SESSION['uId'])){
         $result = pg_query($conn, "SELECT * FROM advertisement");
         $id = pg_num_rows($result);
         $id += 1;    
-        $query = "INSERT INTO advertisement values('$id', '$tname', '$price', '$condition', '$category', '$desc', '$location', '$contact', '$usrId')";
-        $res = pg_query($conn, $query);
-        if($res){
-            header("Location:buyer.php?youradissuccessfullyposted");
-        }
+        
         $file  = $_FILES['file'];
         $fileName = $file['name'];
         $fileTMPName = $file['tmp_name'];

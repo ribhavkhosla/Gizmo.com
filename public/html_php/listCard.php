@@ -7,12 +7,12 @@
     function arrayRetrieve() {
         $arr = array();
         $conn = pg_connect("host=localhost port=5432 dbname=postgres user=postgres password=aditya21012");
-
+        $usrId = $_SESSION['uId'];
         $query = pg_query($conn, "SELECT * FROM advertisement");
 
             while($row = pg_fetch_assoc($query))
             {
-                $addArr = array($row['name'] , $row['price'], $row['condition'],$row['category'], $row['description'], $row['location'],$row['contactinfo']);
+                $addArr = array($row['name'] , $row['price'], $row['condition'],$row['category'], $row['description'], $row['location'],$row['contactinfo'],$row['userid']);
                 $arr[] = $addArr;
             }
             echo json_encode($arr);

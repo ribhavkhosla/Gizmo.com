@@ -13,23 +13,23 @@
     <script src="cards.js"></script>
 </head>
 
-<body>
+<body onload="userAds($_SESSION['uId'])">
     
-    <div id="m" class="main">
+    <div id="m" class="main" >
         <?php include('nav.php')?>
         <?php
+            error_reporting(0);
+            
             if(isset($_SESSION['uId'])){
                 echo '
-                <div id = "container" onload = "onLoad()">
-                    <h1 >My Ads</h1>
-                </div>
+                <h1>My Ads</h1>
                 <div  class="aboutItem">
                     <h2>My Profile </h2>
                     <br>
                     <br>
                     <br>
                     <h3>Name</h3>
-                    <p>'.$_SESSION['uname'].'</p>
+                    <p>'.$_SESSION['uname'].' '.$_SESSION['lname'].'</p>
                     <br>
                     <h3>Phone Number</h3>
                     <p>+'.$_SESSION['phone'].'</p>
@@ -51,13 +51,15 @@
             ?>
             <script>
             function onLoad(){
-
-                for(i=0;i<3;i++){
+                var imp = document.createElement("div");
+                var main = document.getElementById("m");
+                document.body.appendChild(imp);
+                for(i=0;i<5;i++){
+                    imp.id = "container";
                     var cont = document.getElementById("container");
                     var block = document.createElement("div");
                     var image = document.createElement("img");
                     var txt = document.createElement("text");
-                    var main = document.getElementById("m");
 
                     cont.className = "cont";
                     block.className = "infoBox";                    
@@ -68,10 +70,7 @@
 
                     cont.appendChild(block);
 
-                    main.appendChild(main);
-
-                    document.body.appendChild(main);
-
+                    main.appendChild(cont);
                 }
 
             }

@@ -4,7 +4,6 @@
 }
 
 .main{
-    width: 100%;
     background-color: white;
     background-position: center;
     background-size: cover;
@@ -46,13 +45,14 @@ ul li a:hover{
     padding: 10px 40px 10px 40px;
     margin: 40px;
 }
+
 .echo{
     text-align: center;
     font-size: 40px;
-  }
+}
 
 .cont{
-    border: 1px solid black;
+    margin-left: 5%;
     padding:20px;
     width: 40%;
     float: left;
@@ -62,10 +62,8 @@ ul li a:hover{
 .infoBox{
     border: 1px solid black;
     border-radius: 10px;
-    width: 80%;
-    height: 40%;
+    margin-bottom: 10px;
     display: inline-block;
-
 }
 
 .infoBox img{
@@ -80,17 +78,17 @@ ul li a:hover{
     float: right;
     padding: 50px;
     margin-right: 30px;
-
 }
+
 h1{
-    border: 1px solid white;
-    
+    margin-top: 2%;
     font-size: 50px;
     padding: 10px;
+    width: 40%;
+    margin-right: 40%;
     font-family: 'Times New Roman', Times, serif;
     width: 40%;
     text-align: center;
-     
 }
 
 .aboutItem{
@@ -103,9 +101,9 @@ h1{
     text-align: center;
     background-color: #2179B5;
     position: sticky;
-    top: 0;
-    
+    top: 0;  
 }
+
 .aboutItem h2{
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
