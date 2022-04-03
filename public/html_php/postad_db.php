@@ -1,6 +1,4 @@
 <?php
-include_once 'signin_db.php';
-
 
 include_once 'signin_db.php';
 $usrId = $_SESSION['uId'];
@@ -26,35 +24,35 @@ if (isset($_POST["ad"]) && $_POST["ad"]=="Post Ad"){
         header("location:buyer.php");
     }
     
-    $file  = $_FILES['file'];
+    // $file  = $_FILES['file'];
     
-    $fileName = $_FILES['file']['name'];
-    $fileTMPName = $_FILES['file']['tmp_name'];
-    $fileSize = $_FILES['file']['size'];
-    $fileError = $_FILES['file']['error'];
-    $fileType = $_FILES['file']['type'];
+    // $fileName = $_FILES['file']['name'];
+    // $fileTMPName = $_FILES['file']['tmp_name'];
+    // $fileSize = $_FILES['file']['size'];
+    // $fileError = $_FILES['file']['error'];
+    // $fileType = $_FILES['file']['type'];
 
-    $fileExt  = explode('.', $filename);
-    $fileActualExt = strtolower(end($fileExt));
+    // $fileExt  = explode('.', $filename);
+    // $fileActualExt = strtolower(end($fileExt));
 
-    $allowed = array('jpg', 'jpeg', 'png');
+    // $allowed = array('jpg', 'jpeg', 'png');
 
-    if(in_array($fileActualExt, $allowed)){
-        if($fileError === 0){
-            if($fileSize < 1000000){
-                $fileNameNew = "adImg".$id.".".$fileActualExt;
-                $fileDestination = 'uploads/'.$fileNameNew;
-                move_uploaded_file($fileTMPName, $fileDestination);
-                header("Location:buyer.php?youradissuccessfullyposted");
-            }else{
-                echo "Your file is too big";
-            }
-        }else{
-            echo "There was an error uploading your image";
-        }
-    }else{
-        echo"You cannot upload the files with this extention";
-    }
+    // if(in_array($fileActualExt, $allowed)){
+    //     if($fileError === 0){
+    //         if($fileSize < 1000000){
+    //             $fileNameNew = "adImg".$id.".".$fileActualExt;
+    //             $fileDestination = 'uploads/'.$fileNameNew;
+    //             move_uploaded_file($fileTMPName, $fileDestination);
+    //             header("Location:buyer.php?youradissuccessfullyposted");
+    //         }else{
+    //             echo "Your file is too big";
+    //         }
+    //     }else{
+    //         echo "There was an error uploading your image";
+    //     }
+    // }else{
+    //     echo"You cannot upload the files with this extention";
+    // }
 
 }
 
