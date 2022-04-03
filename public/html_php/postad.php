@@ -21,8 +21,10 @@ include_once 'signin_db.php';
         <?php
 
 
+
+
         if (isset($_SESSION['uId'])) {
-            echo '<form class="form" action="postad_db.php" method="post" enctype="multipart.form-data">
+            echo '<form class="form" action="postad_db.php" method="post" enctype="multipart/form-data">
             <div class="content">
                 <h1>Post an Ad</h1>
                 <br>
@@ -63,7 +65,8 @@ include_once 'signin_db.php';
                 <label for="image"><b>Choose Image</b></label>
                 <input type="file" name="file">
                 
-                <a href="choose.php"><input type="button"  value="Previous"><a>
+                <a href="choose.php"><input type="button" value="Previous"></a>
+                
                 <input type="submit" name="ad" value="Post Ad">
             </div>
         </form>';
@@ -72,6 +75,7 @@ include_once 'signin_db.php';
             Click Home to sign in or make an account<div>';
         }
         ?>
+        
     </div>
 </body>
 </html>
