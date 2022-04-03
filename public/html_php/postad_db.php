@@ -2,7 +2,11 @@
 include_once 'signin_db.php';
 
 
-if(isset($_POST["ad"]) && $_POST["ad"]=="Post Ad"){
+include_once 'signin_db.php';
+$usrId = $_SESSION['uId'];
+
+
+if (isset($_POST["ad"]) && $_POST["ad"]=="Post Ad"){
     $conn = pg_connect("host=localhost port=5432 dbname=postgres user=postgres password=aditya21012");
     $tname = $_POST["title"];
     $price = $_POST["price"];
@@ -38,7 +42,7 @@ if(isset($_POST["ad"]) && $_POST["ad"]=="Post Ad"){
     if(in_array($fileActualExt, $allowed)){
         if($fileError === 0){
             if($fileSize < 1000000){
-                $fileNameNew = uniqid('',true).".".$fileActualExt;
+                $fileNameNew = "adImg".$id.".".$fileActualExt;
                 $fileDestination = 'uploads/'.$fileNameNew;
                 move_uploaded_file($fileTMPName, $fileDestination);
                 header("Location:buyer.php?youradissuccessfullyposted");

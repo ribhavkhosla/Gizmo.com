@@ -1,23 +1,27 @@
 <?php
-    session_start();
-    include_once 'postad_db.php';
-    include_once 'signin_db.php';
+session_start();
+include_once 'postad_db.php';
+include_once 'signin_db.php';
 
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <?php include('header.php')?>
-    <?php include('autofill.php')?>
+    <?php include('header.php') ?>
+    <?php include('autofill.php') ?>
     <title>Gizmo.com/PostAd</title>
     <link rel="stylesheet" href="/project-gizmo/public/css/postad.css">
 </head>
+
 <body>
     <div class="main">
-        <?php include('nav.php')?>
+        <?php include('nav.php') ?>
         <?php
-        if(isset($_SESSION['uId'])){
+
+
+        if (isset($_SESSION['uId'])) {
             echo '<form class="form" action="postad_db.php" method="post" enctype="multipart.form-data">
             <div class="content">
                 <h1>Post an Ad</h1>
@@ -63,8 +67,7 @@
                 <input type="submit" name="ad" value="Post Ad">
             </div>
         </form>';
-        }
-        else{
+        } else {
             echo '<div class="echo">You need to sign in to post an ad.<br>
             Click Home to sign in or make an account<div>';
         }
