@@ -30,7 +30,11 @@ if (isset($_POST["ad"]) && $_POST["ad"]=="Post Ad"){
                 $fileNameNew = "adImg".$id.".".$fileActualExt;
                 $fileDestination = 'uploads/'.$fileNameNew;
                 move_uploaded_file($fileTMPName, $fileDestination);
-                header("Location:buyer.php?youradissuccessfullyposted");
+                $query = "INSERT INTO advertisement values('$id', '$tname', '$price', '$condition', '$category', '$desc', '$location', '$contact', '$id')";
+                $res = pg_query($conn, $query);
+                if($res){
+                    header("Location:buyer.php?youradissuccessfullyposted");
+                }
             }else{
                 echo "Your file is too big";
             }
@@ -41,11 +45,7 @@ if (isset($_POST["ad"]) && $_POST["ad"]=="Post Ad"){
         echo"You cannot upload the files with this extention";
     }
 
-    $query = "INSERT INTO advertisement values('$id', '$tname', '$price', '$condition', '$category', '$desc', '$location', '$contact', '$id')";
-    $res = pg_query($conn, $query);
-    if($res){
-        header("location:buyer.php");
-    }
+    
 
 }
 
