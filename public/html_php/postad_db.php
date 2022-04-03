@@ -35,11 +35,11 @@ if(isset($_SESSION['uId'])){
     
         if(in_array($fileActualExt, $allowed)){
             if($fileError === 0){
-                if(!$fileSize > 10){
-                    $fileNameNew = "adImg".$id.".".$fileActualExt;
-                    $fileDestination = 'uploads/'.$fileNameNew;
+                if($fileSize < 100000000){
+                    $fileNameNew = uniqid('',true).".".$fileActualExt;
+                    $fileDestination = '/xampp/htdocs/project-gizmo/public/uploads/'.$fileNameNew;
                     move_uploaded_file($fileTMPName, $fileDestination);
-                    $query = "INSERT INTO advertisement values('$id', '$tname', '$price', '$condition', '$category', '$desc', '$location', '$contact', '$id')";
+                    $query = "INSERT INTO advertisement values('$id', '$tname', '$price', '$condition', '$category', '$desc', '$location', '$contact', '$usrId')";
                     $res = pg_query($conn, $query);
                     if($res){
                         header("Location:buyer.php?youradissuccessfullyposted");
@@ -50,7 +50,8 @@ if(isset($_SESSION['uId'])){
             }else{
                 echo "There was an error uploading your image";
 
-        
+            }
+        }
     
     }
 }

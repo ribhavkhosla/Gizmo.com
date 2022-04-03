@@ -133,6 +133,14 @@ function dropDown(val) {
     }
 }
 
+function showArr(arr){
+    var resArr = [];
+    for(i=0;i<arr.length;i++){
+        resArr.push(arr[i]);
+    }
+    onLoad(resArr);
+}
+
 
     
 
