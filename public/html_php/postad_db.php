@@ -16,14 +16,10 @@ if(isset($_SESSION['uId'])){
         $result = pg_query($conn, "SELECT * FROM advertisement");
         $id = pg_num_rows($result);
         $id += 1;    
-        $query = "INSERT INTO advertisement values('$id', '$tname', '$price', '$condition', '$category', '$desc', '$location', '$contact', '$usrId')";
-        $res = pg_query($conn, $query);
-        if($res){
-            header("Location:buyer.php?youradissuccessfullyposted");
-        }
-        $file  = $_FILES['file'];
+        
+        $file  = $_FILES['file_img'];
         $fileName = $file['name'];
-        $fileTMPName = $file['tmp_name'];
+        $fileTmpName = $file['tmp_name'];
         $fileSize = $file['size'];
         $fileError = $file['error'];
         $fileType = $file['type'];
@@ -38,7 +34,7 @@ if(isset($_SESSION['uId'])){
                 if($fileSize < 2000000){
                     $fileNameNew = "adImg". "-" . $id . "." . $fileActualExt;
                     $fileDestination = "../adImages/" . $fileNameNew;
-                    move_uploaded_file($fileTMPName, $fileDestination);
+                    move_uploaded_file($fileTmpName, $fileDestination);
                     $query = "INSERT INTO advertisement values('$id', '$tname', '$price', '$condition', '$category', '$desc', '$location', '$contact', '$usrId')";
                     $res = pg_query($conn, $query);
                     if($res){
