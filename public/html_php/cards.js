@@ -104,7 +104,7 @@ function addCard(){
 function transform(){
     jQuery.ajax({
         type: "POST",
-        url: 'buyer.php',
+        url: 'listCard.php',
         dataType: 'json',
         data: {functionname: 'arrayR', arguments: [] },
         success: function(data){

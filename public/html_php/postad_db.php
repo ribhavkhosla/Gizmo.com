@@ -1,9 +1,5 @@
 <?php
 
-include_once 'signin_db.php';
-$usrId = $_SESSION['uId'];
-
-
 if (isset($_POST["ad"]) && $_POST["ad"]=="Post Ad"){
     $conn = pg_connect("host=localhost port=5432 dbname=postgres user=postgres password=aditya21012");
     $tname = $_POST["title"];
@@ -45,8 +41,7 @@ if (isset($_POST["ad"]) && $_POST["ad"]=="Post Ad"){
         echo"You cannot upload the files with this extention";
     }
 
-    $query = "INSERT INTO advertisement values('$id', '$tname', 
-    '$price', '$condition', '$category', '$desc', '$location', '$contact', '$usrId')";
+    $query = "INSERT INTO advertisement values('$id', '$tname', '$price', '$condition', '$category', '$desc', '$location', '$contact', '$id')";
     $res = pg_query($conn, $query);
     if($res){
         header("location:buyer.php");

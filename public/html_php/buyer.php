@@ -43,19 +43,7 @@ include 'postad_db.php';?>
         echo '<div class="echo">You need to sign in to browse all the products.<br>
         Click Home to sign in or make an account.<div>';
     }
-    function arrayRetrieve() {
-        $arr = array();
-        $conn = pg_connect("host=localhost port=5432 dbname=postgres user=postgres password=aditya21012");
-
-        $query = pg_query($conn, "SELECT * FROM advertisement");
-
-            while($row = pg_fetch_assoc($query))
-            {
-                $addArr = array($row['name'] , $row['price'], $row['condition'],$row['category'], $row['description'], $row['location'],$row['contactinfo']);
-                $arr[] = $addArr;
-            }
-            echo json_encode($arr);
-    }
+    include 'listCard.php';
     ?>
     <script>
         function onLoad(arr){
