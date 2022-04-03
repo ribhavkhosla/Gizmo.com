@@ -37,16 +37,16 @@ include_once 'signin_db.php';
 
                 <label for="category">Category</label>
                 <select id="category" name="category">
-                <option value="phone">Phone</option>
-                <option value="laptops">Laptops</option>
-                <option value="tablets">Tablets</option>
-                <option value="desktop">Desktop</option>
-                <option value="monitors">Monitors</option>
-                <option value="pc peripherals">PC Peripherals</option>
-                <option value="wearables">Wearables</option>
-                <option value="audio">Audio</option>
-                <option value="smart home">Smart Home</option>
-                <option value="tv">TVs</option>
+                <option value="Phone">Phone</option>
+                <option value="Laptops">Laptops</option>
+                <option value="Tablets">Tablets</option>
+                <option value="Desktop">Desktop</option>
+                <option value="Monitor">Monitors</option>
+                <option value="PC Peripherals">PC Peripherals</option>
+                <option value="Wearables">Wearables</option>
+                <option value="Audio">Audio</option>
+                <option value="Smart Home">Smart Home</option>
+                <option value="TVs">TVs</option>
                 <option value="Cameras">Cameras</option>
                 <option value="Gaming">Gaming</option>
                 </select>

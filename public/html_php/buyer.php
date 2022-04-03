@@ -22,11 +22,12 @@ include 'postad_db.php';?>
         <div class="dropdown">
         <button class="dropbtn">Choose your category</button>
         <div class="dropdown-content">
-            <a id = "Phones" onclick = "dropDown(this.id)">Phones</a>
+            <a id = "All" onclick = "dropDown(this.id)">All</a>
+            <a id = "Phone" onclick = "dropDown(this.id)">Phones</a>
             <a id ="Laptops" onclick = "dropDown(this.id)">Laptops</a>
             <a id ="Tablets" onclick = "dropDown(this.id)">Tablets</a>
-            <a id ="Desktops" onclick = "dropDown(this.id)">Desktops</a>
-            <a id ="Monitors" onclick = "dropDown(this.id)">Monitors</a>
+            <a id ="Desktop" onclick = "dropDown(this.id)">Desktops</a>
+            <a id ="Monitor" onclick = "dropDown(this.id)">Monitors</a>
             <a id ="PC Peripherals" onclick = "dropDown(this.id)">PC Peripherals</a>
             <a id ="Wearables" onclick = "dropDown(this.id)">Wearables</a>
             <a id ="Audio" onclick = "dropDown(this.id)">Audio</a>
