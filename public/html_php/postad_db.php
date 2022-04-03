@@ -1,6 +1,4 @@
 <?php
-include_once 'signin_db.php';
-
 
 include_once 'signin_db.php';
 $usrId = $_SESSION['uId'];
@@ -17,23 +15,14 @@ if (isset($_POST["ad"]) && $_POST["ad"]=="Post Ad"){
     $contact = $_POST["contact"];
     $result = pg_query($conn, "SELECT * FROM advertisement");
     $id = pg_num_rows($result);
-    $id += 1;
-    $usrId = $_POST['uId'];
-    $query = "INSERT INTO advertisement values('$id', '$tname', 
-    '$price', '$condition', '$category', '$desc', '$location', '$contact', '$usrId')";
-    $res = pg_query($conn, $query);
-    if($res){
-        header("location:buyer.php");
-    }
-    
+    $id += 1;    
     $file  = $_FILES['file'];
-    
     $fileName = $_FILES['file']['name'];
     $fileTMPName = $_FILES['file']['tmp_name'];
     $fileSize = $_FILES['file']['size'];
     $fileError = $_FILES['file']['error'];
     $fileType = $_FILES['file']['type'];
-
+    
     $fileExt  = explode('.', $filename);
     $fileActualExt = strtolower(end($fileExt));
 
@@ -54,6 +43,13 @@ if (isset($_POST["ad"]) && $_POST["ad"]=="Post Ad"){
         }
     }else{
         echo"You cannot upload the files with this extention";
+    }
+
+    $query = "INSERT INTO advertisement values('$id', '$tname', 
+    '$price', '$condition', '$category', '$desc', '$location', '$contact', '$usrId')";
+    $res = pg_query($conn, $query);
+    if($res){
+        header("location:buyer.php");
     }
 
 }
