@@ -1,4 +1,6 @@
 <?php
+include_once 'signin_db.php';
+
 
 if(isset($_POST["ad"]) && $_POST["ad"]=="Post Ad"){
     $conn = pg_connect("host=localhost port=5432 dbname=postgres user=postgres password=aditya21012");
@@ -12,8 +14,9 @@ if(isset($_POST["ad"]) && $_POST["ad"]=="Post Ad"){
     $result = pg_query($conn, "SELECT * FROM advertisement");
     $id = pg_num_rows($result);
     $id += 1;
+    $usrId = $_POST['uId'];
     $query = "INSERT INTO advertisement values('$id', '$tname', 
-    '$price', '$condition', '$category', '$desc', '$location', '$contact', '$id')";
+    '$price', '$condition', '$category', '$desc', '$location', '$contact', '$usrId')";
     $res = pg_query($conn, $query);
     if($res){
         header("location:buyer.php");
@@ -38,7 +41,7 @@ if(isset($_POST["ad"]) && $_POST["ad"]=="Post Ad"){
                 $fileNameNew = uniqid('',true).".".$fileActualExt;
                 $fileDestination = 'uploads/'.$fileNameNew;
                 move_uploaded_file($fileTMPName, $fileDestination);
-                header("Location:choose.php?youradissuccessfullyposted");
+                header("Location:buyer.php?youradissuccessfullyposted");
             }else{
                 echo "Your file is too big";
             }
@@ -50,3 +53,4 @@ if(isset($_POST["ad"]) && $_POST["ad"]=="Post Ad"){
     }
 
 }
+

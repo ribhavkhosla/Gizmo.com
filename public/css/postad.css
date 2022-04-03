@@ -75,6 +75,16 @@ ul li a:hover{
   color: white;
   font-weight: bold;
   font-family: 'Times New Roman', Times, serif;
+  cursor: pointer;
+}
+.content input[type="button"]{
+  background-color:white;
+  width: 30%;
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  cursor: pointer;
 }
 
 .echo{

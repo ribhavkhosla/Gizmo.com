@@ -2,8 +2,7 @@
 <?php
 session_start();
 include_once 'signin_db.php';
-include 'postad_db.php';
-?>
+include 'postad_db.php';?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -58,7 +57,6 @@ include 'postad_db.php';
             echo json_encode($arr);
     }
     ?>
-    
     <script>
         function onLoad(arr){
             var imp = document.createElement("div");

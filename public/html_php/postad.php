@@ -59,7 +59,7 @@
                 <label for="image"><b>Choose Image</b></label>
                 <input type="file" name="file">
                 
-                <input type="button" value="Previous">
+                <a href="choose.php"><input type="button"  value="Previous"><a>
                 <input type="submit" name="ad" value="Post Ad">
             </div>
         </form>';
