@@ -1,10 +1,12 @@
 <?php
+    error_reporting(0);
     session_start();
     include_once 'signin_db.php';
+    $usrId = $_SESSION['uId'];
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"  >
 
 <head>
     <?php include('header.php')?>
@@ -13,13 +15,12 @@
     <script src="cards.js"></script>
 </head>
 
-<body onload="userAds($_SESSION['uId'])">
-    
-    <div id="m" class="main" >
+<body onload ="userAds()">
+    <div id="m" class="main">
         <?php include('nav.php')?>
         <?php
             error_reporting(0);
-            
+            $usrId = $_SESSION['uId'];
             if(isset($_SESSION['uId'])){
                 echo '
                 <h1>My Ads</h1>
@@ -50,37 +51,46 @@
             }
             ?>
             <script>
-            function onLoad(){
+            function onLoad(arr){
                 var imp = document.createElement("div");
                 var main = document.getElementById("m");
                 document.body.appendChild(imp);
-                for(i=0;i<5;i++){
+                for(i=0;i<arr.length;i++){
                     imp.id = "container";
                     var cont = document.getElementById("container");
                     var block = document.createElement("div");
                     var image = document.createElement("img");
-                    var txt = document.createElement("text");
+                    var title = document.createElement("div");
+                    var txt = document.createElement("h2");
 
                     cont.className = "cont";
-                    block.className = "infoBox";                    
-                    txt.innerHTML = "Iphone Max Pro";
+                    block.className = "infoBox"; 
+                    title.className = "textBox";                   
+                    txt.innerHTML = arr[i].title;
 
+                    title.appendChild(txt);
+                    
                     block.appendChild(image);
-                    block.appendChild(txt);
-
+                    block.appendChild(title);
+                    
                     cont.appendChild(block);
 
                     main.appendChild(cont);
                 }
 
             }
+            function userAds(){
+                var num= "<?php echo $usrId ?>";
+                var resArr = [];
+                console.log(num);
+                for(i=0;i<prodList.length;i++){
+                    if(prodList[i].userid == num){
+                        resArr.push(prodList[i]);
+                    }
+                }
+                onLoad(resArr);
+            }
             </script>
-
-            <!-- <div class="infoBox">
-                <img src="/project-gizmo/Img/1.png" alt="ad image">
-                <text> Iphone 13 Pro Max</text>
-            </div>  -->
-               
            
     </div>
 

@@ -102,13 +102,12 @@ function addCard(){
         prodList.push(attributes);
     }
 }
-
 function transform(){
     jQuery.ajax({
         type: "POST",
-        url: 'listCard.php',
+        url: "listCard.php",
         dataType: 'json',
-        data: {functionname: 'arrayR', arguments: [] },
+        data: {functionname: 'arrayR' , arguments: [] },
         success: function(data){
             getItems = data;
         },
@@ -134,17 +133,6 @@ function dropDown(val) {
         nimpo.remove();
         onLoad(resArr);
     }
-}
-
-function userAds(num){
-    var resArr = [];
-    console.log(prodList[0].userid);
-    for(i=0;i<prodList.length;i++){
-        if(prodList[i].userid == num){
-            resArr.push(prodList[i]);
-        }
-    }
-    onLoad(resArr);
 }
 
 function showArr(arr){

@@ -1,8 +1,9 @@
-
 <?php
 session_start();
 include_once 'signin_db.php';
-include 'postad_db.php';?>
+include 'postad_db.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -16,7 +17,7 @@ include 'postad_db.php';?>
 <body>
     <?php include('nav.php')?>
     <?php
-    error_reporting(0);
+    // error_reporting(0);
     if(isset($_SESSION['uId'])){
         echo '
         <div class="dropdown">
@@ -40,12 +41,12 @@ include 'postad_db.php';?>
     <div class="heading2"> Available Products </div>
     <br>
     <br>';
+
     }
     else{
         echo '<div class="echo">You need to sign in to browse all the products.<br>
         Click Home to sign in or make an account.<div>';
     }
-    include 'listCard.php';
     ?>
     <script>
         function onLoad(arr){
@@ -58,25 +59,25 @@ include 'postad_db.php';?>
                 var box = document.createElement("div");
                 var image = document.createElement("img");
                 var head4 = document.createElement("h4");
-                var para = document.createElement("p");
+                var cost = document.createElement("p");
                 var bttn = document.createElement("button");
 
                 box.className = 'imageBox'
                 divs.className = 'card';
-                para.className = 'price';
-                image.src = arr[i].image;
+                cost.className = 'price';
+                // image.src = arr[i].image;
                 box.width = "200";
                 box.height = "500";
                 image.width="200";
                 
                 head4.innerHTML = arr[i].title;
-                para.innerHTML = arr[i].price;
+                cost.innerHTML = '$' + arr[i].price;
 
                 bttn.innerHTML = "View Ad";
                 box.appendChild(image);
                 divs.appendChild(box);
                 divs.appendChild(head4);
-                divs.appendChild(para);
+                divs.appendChild(cost);
                 divs.appendChild(bttn);
 
                 cont.appendChild(divs);

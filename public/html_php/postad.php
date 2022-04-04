@@ -29,7 +29,7 @@ include_once 'signin_db.php';
                 <h1>Post an Ad</h1>
                 <br>
                 <label for="title"><b>Name/Title</b></label>
-                <input type="text" placeholder="Enter Title" name="title" required>
+                <input type="text" placeholder="Enter Title" name="title" maxlength="25" required>
 
                 <label for="price"><b>Price</b></label>
                 <input type="text" placeholder="Enter Price" name="price" required>

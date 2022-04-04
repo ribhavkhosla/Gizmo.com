@@ -4,9 +4,11 @@
     if (isset($_SESSION['uId'])){
         echo'
         <div class="log" action="signin.php" method="POST">
-            <h2>Hello ' . $_SESSION['uname']. '!</h2>
+            <h2>Hello ' . ucfirst($_SESSION['uname']). '!</h2>
             <br>
             <h4>You are currently signed in.</h4>
+            <a href="buyer.php"><button type="submit">Buy Products</button></a>
+            <a href="postad.php"><button type="submit">Post Ad</button></a>
             <form action="logout.php" method="post">
                 <button type="submit" name="logout-submit">Logout</button>
             </form>
