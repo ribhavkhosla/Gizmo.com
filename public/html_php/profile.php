@@ -59,18 +59,27 @@
                     imp.id = "container";
                     var cont = document.getElementById("container");
                     var block = document.createElement("div");
+                    var imageBox = document.createElement("div");
                     var image = document.createElement("img");
                     var title = document.createElement("div");
                     var txt = document.createElement("h2");
 
                     cont.className = "cont";
                     block.className = "infoBox"; 
-                    title.className = "textBox";                   
+                    title.className = "textBox";  
+                    imageBox.className = "imageBox";
+
+                    imageBox.width = "100";
+                    imageBox.height = "400";
+                    image.width = "180";    
+
                     txt.innerHTML = arr[i].title;
+                    image.src = arr[i].image;
 
                     title.appendChild(txt);
-                    
-                    block.appendChild(image);
+                    imageBox.appendChild(image);
+
+                    block.appendChild(imageBox);
                     block.appendChild(title);
                     
                     cont.appendChild(block);

@@ -65,7 +65,7 @@ include 'postad_db.php';
                 box.className = 'imageBox'
                 divs.className = 'card';
                 cost.className = 'price';
-                // image.src = arr[i].image;
+                image.src = arr[i].image;
                 box.width = "200";
                 box.height = "500";
                 image.width="200";

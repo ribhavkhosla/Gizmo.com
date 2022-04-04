@@ -11,9 +11,8 @@
         $query = pg_query($conn, "SELECT * FROM advertisement");
         while($row = pg_fetch_assoc($query))
         {
-            $addArr = array($row['name'] , $row['price'], $row['condition'],$row['category'], $row['description'], $row['location'],$row['contactinfo'],$row['userid']);
+            $addArr = array($row['name'] , $row['price'], $row['condition'],$row['category'], $row['description'], $row['location'],$row['contactinfo'],$row['userid'],$row['image']);
             $arr[] = $addArr;
-            
         }
         echo json_encode($arr);
     }

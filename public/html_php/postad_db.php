@@ -1,5 +1,5 @@
 <?php
-error_reporting(0);
+// error_reporting(0);
 session_start();
 include 'signin_db.php'; 
 if(isset($_SESSION['uId'])){
@@ -16,51 +16,46 @@ if(isset($_SESSION['uId'])){
         $result = pg_query($conn, "SELECT * FROM advertisement");
         $id = pg_num_rows($result);
         $id += 1;  
-        $query = "INSERT INTO advertisement values('$id', '$tname', '$price', '$condition', '$category', '$desc', '$location', '$contact', '$usrId')";
-        $res = pg_query($conn, $query);
-        if($res){
-            header("Location:buyer.php?youradissuccessfullyposted");
-        }  
 
-    //     $file  = $_FILES['file_img'];
-    //     $fileName = $file['name'];
-    //     $fileTmpName = $file['tmp_name'];
-    //     $fileSize = $file['size'];
-    //     $fileError = $file['error'];
-    //     $fileType = $file['type'];
+        $file  = $_FILES['file_img'];
+        $filename = $file['name'];
+        $fileTmpName = $file['tmp_name'];
+        $fileSize = $file['size'];
+        $fileError = $file['error'];
+        $fileType = $file['type'];
         
-    //     $fileExt  = explode(".", $filename);
-    //     $fileActualExt = strtolower(end($fileExt));
+        $fileExt  = explode(".", $filename);
+        $fileActualExt = strtolower(end($fileExt));
     
-    //     $allowed = array("jpg", "jpeg", "png");
+        $allowed = array("jpg", "jpeg", "png");
     
-    //     if(in_array($fileActualExt, $allowed)){
-    //         if($fileError === 0){
-    //             if($fileSize < 2000000){
-    //                 $fileNameNew = "adImg". "-" . $id . "." . $fileActualExt;
-    //                 $fileDestination = "../adImages/" . $fileNameNew;
-    //                 move_uploaded_file($fileTmpName, $fileDestination);
-    //                 $query = "INSERT INTO advertisement values('$id', '$tname', '$price', '$condition', '$category', '$desc', '$location', '$contact', '$usrId')";
-    //                 $res = pg_query($conn, $query);
-    //                 if($res){
-    //                     header("Location:buyer.php?youradissuccessfullyposted");
-    //                 }
-    //             }else{
-    //                 echo "Your file is too big";
-    //                 exit();
-    //             }
-    //         }else{
-    //             echo "There was an error uploading your image";
-    //             exit();
-    //         }
-    //     }else{
-    //         echo "Only jpg, jpeg and png files are allowed. ";
-    //         exit();
-    //     }
+        if(in_array($fileActualExt, $allowed)){
+            if($fileError === 0){
+                if($fileSize < 2000000){
+                    $fileNameNew = "adImg". "-" . $id . "." . $fileActualExt;
+                    $fileDestination = "img/" . $fileNameNew;
+                    move_uploaded_file($fileTmpName, $fileDestination);
+                    $query = "INSERT INTO advertisement values('$id', '$tname', '$price', '$condition', '$category', '$desc', '$location', '$contact', '$usrId', '$fileDestination')";
+                    $res = pg_query($conn, $query);
+                    if($res){
+                        header("Location:buyer.php?youradissuccessfullyposted");
+                    }
+                }else{
+                    echo "Your file is too big";
+                    exit();
+                }
+            }else{
+                echo "There was an error uploading your image";
+                exit();
+            }
+        }else{
+            echo "Only jpg, jpeg and png files are allowed. ";
+            exit();
+        }
     
-    // }
+    }
 }
-}
+
 
 
 

@@ -99,6 +99,7 @@ function addCard(){
         attributes["locaiton"] = addArr[i][5];
         attributes["contactinfo"] = addArr[i][6];
         attributes['userid'] = addArr[i][7];
+        attributes['image'] = addArr[i][8];
         prodList.push(attributes);
     }
 }
@@ -119,6 +120,8 @@ addCard();
 
 function dropDown(val) {
     if(val == "All"){
+        var nimpo = document.getElementById("container");
+        nimpo.remove();
         onload(prodList);
     }
     else{
