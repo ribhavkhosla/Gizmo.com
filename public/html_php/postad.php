@@ -1,8 +1,8 @@
 <?php
+error_reporting(0);
 session_start();
 include_once 'postad_db.php';
 include_once 'signin_db.php';
-
 ?>
 
 <!DOCTYPE html>
@@ -19,10 +19,6 @@ include_once 'signin_db.php';
     <div class="main">
         <?php include('nav.php') ?>
         <?php
-
-
-
-
         if (isset($_SESSION['uId'])) {
             echo '<form class="form" action="postad_db.php" method="post" enctype="multipart/form-data">
             <div class="content">

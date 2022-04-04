@@ -1,4 +1,5 @@
 <?php
+error_reporting(0);
 session_start();
 include_once 'signin_db.php';
 include 'postad_db.php';
@@ -17,7 +18,7 @@ include 'postad_db.php';
 <body>
     <?php include('nav.php')?>
     <?php
-    // error_reporting(0);
+    error_reporting(0);
     if(isset($_SESSION['uId'])){
         echo '
         <div class="dropdown">
