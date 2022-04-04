@@ -71,7 +71,7 @@
 
                     imageBox.width = "100";
                     imageBox.height = "400";
-                    image.width = "180";    
+                    image.width = "150";    
 
                     txt.innerHTML = arr[i].title;
                     image.src = arr[i].image;
