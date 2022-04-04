@@ -85,21 +85,20 @@ var prodList = [
     // }
 ]
 
-
-
 function addCard(){
     var addArr = transform();
     for(i=0;i<addArr.length;i++){
         var attributes = {};
-        attributes["title"] = addArr[i][0];
-        attributes["price"] = addArr[i][1];
-        attributes["condition"] = addArr[i][2];
-        attributes["category"] = addArr[i][3];
-        attributes["description"] = addArr[i][4];
-        attributes["locaiton"] = addArr[i][5];
-        attributes["contactinfo"] = addArr[i][6];
-        attributes['userid'] = addArr[i][7];
-        attributes['image'] = addArr[i][8];
+        attributes["id"] = addArr[i][0]
+        attributes["title"] = addArr[i][1];
+        attributes["price"] = addArr[i][2];
+        attributes["condition"] = addArr[i][3];
+        attributes["category"] = addArr[i][4];
+        attributes["description"] = addArr[i][5];
+        attributes["locaiton"] = addArr[i][6];
+        attributes["contactinfo"] = addArr[i][7];
+        attributes['userid'] = addArr[i][8];
+        attributes['image'] = addArr[i][9];
         prodList.push(attributes);
     }
 }

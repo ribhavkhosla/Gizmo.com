@@ -92,8 +92,10 @@
                 var num= "<?php echo $usrId ?>";
                 var resArr = [];
                 console.log(num);
-                for(i=0;i<prodList.length;i++){
-                    if(prodList[i].userid == num){
+                for(i=0;i<prodList.length;i++)
+                {
+                    if(prodList[i].userid == num)
+                    {
                         resArr.push(prodList[i]);
                     }
                 }

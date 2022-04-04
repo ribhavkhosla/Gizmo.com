@@ -1,3 +1,7 @@
+<?php
+include_once 'signin_db.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,11 +9,16 @@
     <?php include('header.php')?>
     <title>Gizmo.com/Product</title>
     <link rel="stylesheet" href="/project-gizmo/public/css/item.css">
+    <script src="cards.js"> </script>
 </head>
 
 <body>
     <div class="main">
         <?php include('nav.php')?>
+        <?php
+        $myId = $_GET['id'];
+        echo $myID;
+        ?>
         <div class="aboutItem">
             <h3>Iphone 13 Pro Max</h3>
             <h3>Price:</h3>

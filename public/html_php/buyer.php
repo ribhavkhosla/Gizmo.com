@@ -62,9 +62,10 @@ include 'postad_db.php';
                 var cost = document.createElement("p");
                 var bttn = document.createElement("button");
 
-                box.className = 'imageBox'
+                box.className = 'imageBox';
                 divs.className = 'card';
                 cost.className = 'price';
+                bttn.className = 'viewAd';
                 image.src = arr[i].image;
                 box.width = "200";
                 box.height = "500";
@@ -73,7 +74,11 @@ include 'postad_db.php';
                 head4.innerHTML = arr[i].title;
                 cost.innerHTML = '$' + arr[i].price;
 
-                bttn.innerHTML = "View Ad";
+                // btnn.id = arr[i].id;
+
+                bttn.innerHTML = "<a href='item.php?id=1'><button>View Ad</button></a>";
+
+                // bttn.innerHTML = "View Ad";
                 box.appendChild(image);
                 divs.appendChild(box);
                 divs.appendChild(head4);
@@ -86,21 +91,6 @@ include 'postad_db.php';
 
         
     </script>
-    <!-- <div class="card">
-        <img src="/project-gizmo/Img/1.png" width="70%" alt="Denim Jeans">
-        <h4>Iphone 13 Pro Max</h4>
-        <p class="price">$999.99</p>
-        <button>View Ad</button>
-    </div> -->
-    <!-- <div class="card">
-        <img src="/project-gizmo/Img/1.png" width="70%" alt="Denim Jeans">
-        <h4>Iphone 13 Pro Max</h4>
-        <p class="price">$999.99</p>
-        <p><button>View Ad</button></p>
-    </div>-->
-
-
-
 </body>
 
 </html>
