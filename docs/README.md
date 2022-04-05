@@ -15,6 +15,7 @@ Ribhav Khosla 300087647
 
 
 **About**
+
 The web application "Gizmo" is an online marketplace for sale and purchase of Electronics. 
 
 **Technologies Used**
