@@ -84,7 +84,7 @@ Our automated testing code runs the Hello World test which was based on sampleph
 
 Below you can see all the webpages and their features that a user can access and use.
 
-![](/Img/screenshots/welcome.png)
+![](/Img/screenshots/welcome.gif)
 
 *Screenshots of our landing page welcome.php*
 
