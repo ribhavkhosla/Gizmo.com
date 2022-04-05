@@ -14,7 +14,7 @@ Ribhav Khosla 300087647
 5. Additional explanation for some Features.
 
 
-**About**
+**About** 
 The web application "Gizmo" is an online marketplace for sale and purchase of Electronics. 
 
 **Technologies Used**
@@ -123,7 +123,7 @@ POSTAD
 
 The address feild of the post ad form also uses the google maps api for autofilling the addresses.
 
-A user can also upload an image with their ad through the same form itself. The image is automatically renamed to a unique name and stored in /project-gizmo/public/html_php/img/ ans the path of the image is also stored int the database table "advertisement".
+A user can also upload an image with their ad through the same form itself. The image is automatically renamed to a unique name and stored in /project-gizmo/public/html_php/img/ ans the path of the image is also stored int the database table "advertisement". 
 
 ![](/Img/screenshots/postad.gif)
 
@@ -181,6 +181,9 @@ The contact us page takes all the information entered on the page and saves it t
 For the database you have to create tables from the given scripts in project-gizmo/docs/scripts_db in Pgadmin Database management system.
 
 You will also find sample data to populate the tables in userinfoPopulation.txt and advertisementPopulation.txt.
+
+Please check project-gizmo/Img/screenshots to check out the gifs if all of them dont show up 
+on this readme.
 
 
 
