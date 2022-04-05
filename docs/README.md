@@ -174,7 +174,7 @@ ABOUT
 
 CONTACT US
 
-![](/Img/screenshots/contactus.png)
+![](/Img/screenshots/contact.png)
 
 *Screenshots of contactus.php where a user can fill out a form in order to contact us.*
 
