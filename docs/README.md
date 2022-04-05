@@ -7,12 +7,6 @@ Ribhav Khosla 300087647
 
 **Table of Contents:**
 
-1. Implementations of Features
-2. Software Documentation
-3. Adherence to UI Design System
-4. Seeding application with sample data
-5. Application features
-
 1. About 
 2. Technologies Used
 3. UI and UX Design & Features
@@ -25,7 +19,7 @@ The web application "Gizmo" is an online marketplace for sale and purchase of El
 
 **Technologies Used**
 
-*1.Server Technology*
+SERVER TECHNOLOGY 
 
 We are using Xampp web server solution software for running our php on the Apache web server.
 
@@ -49,7 +43,7 @@ After going to https://localhost/project-gizmo, go to public/html_php/welcome.ph
 
 
 
-*2.Database Technology*
+DATABASE TECHNOLOGY
 
 We are using Postgresql as our database technology. For this deliverable we are successfully connecting our webpages to our database server and are monitoring it using PGADMIN4. 
 
@@ -66,7 +60,7 @@ One important step before we can use postgresql and Xampp together is that we ha
 *Screenshots of pgsql apache configuration changes*
 
 
-*3.Automated Testing Frameworks*
+AUTOMATED TESTING FRAMEWORKS
 
 We are using PHPUNIT for automatic testing. First we need to setup PHPUNIT.
 This can be easily done by running the following command in your project directory on the terminal/command prompt.
