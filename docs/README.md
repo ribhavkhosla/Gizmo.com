@@ -84,6 +84,8 @@ Our automated testing code runs the Hello World test which was based on sampleph
 
 Below you can see all the webpages and their features that a user can access and use.
 
+WELCOME
+
 ![](/Img/screenshots/welcome.gif)
 
 *Screenshots of our landing page welcome.php*
@@ -112,27 +114,26 @@ One special feature of the sign up form is that the address feild of the form au
 
 *Screenshots of google maps api usage*
 
+CHOOSE
 
-![](/Img/screenshots/choose.png)
+The choose page also has a header but it is different. This header has the logo on the left side and has two additional butons: "Post Ad" and "Browse". The Browse button takes the user to the buyer.php page.This page prompts welcome message to the user with their name which is retrieved from the database and shows two buttons below it for navigation to postad.php or buyer.php.
 
-*Screenshots of choose.php where the users can choose whether they want to post an Ad or buy something.*
+![](/Img/screenshots/choose.gif)
 
-The choose page also has a header but it is different. This header has the logo on the left side and has two additional butons: "Post Ad" and "Browse". The Browse button takes the user to the buyer.php page.
-![]
-
-This page prompts welcome message to the user with their name which is retrieved from the database and shows two buttons below it for navigation to postad.php or buyer.php.
-![]
+*Screenshots of choose.php page*
 
 
-![](/Img/screenshots/postad.png)
-
-*Screenshots of postad.php where the users get a form to post an Ad.*
+POSTAD
 
 "postad.php" is simply a form which collects all the information about the Ad that the user wants to post. All the information collected for this ad is stored in the database table "advertisements". 
 
 The address feild of the post ad form also uses the google maps api for autofilling the addresses.
 
 A user can also upload an image with their ad through the same form itself. The image is automatically renamed to a unique name and stored in /project-gizmo/public/html_php/img/ ans the path of the image is also stored int the database table "advertisement".
+
+![](/Img/screenshots/postad.gif)
+
+*Screenshots of postad.php where the users get a form to post an Ad.*
 
 
 
