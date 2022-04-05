@@ -80,41 +80,50 @@ Our automated testing code runs the Hello World test which was based on sampleph
 
 
 
-**UI & UX Design Systems and Features on each**
+**UI & UX Design Systems and Features on each page**
 
 Below you can see all the webpages and their features that a user can access and use.
 
-![](/Img/screenshots/welcome.png)
+WELCOME
+
+![](/Img/screenshots/welcome.gif)
 
 *Screenshots of our landing page welcome.php*
 
 The welcome page is the homepage of the website. It has a header which has hoverable buttons which can take a user to other linked pages.
-![]
+
+![](/Img/screenshots/hover.gif)
+
+*Screenshots of hoverable buttons*
 
 There is a Signin area on the right side of the page and below that there is a Signup button which pops up a sign up form for a user to sign up and create an account. When the user tries to sign up, their information is collected in the database table "user_info" and the user verification process is also done with the help of the database. 
 
+![](/Img/screenshots/signuppop.gif)
+
+*Screenshots of sign up pop*
+
 When a user tries to sign in and fills out the email and password, this information is verified by accessing the database whether there exist a user whth the exact same information that has been provided. After a user has succussfully signed into their account, a session is started. and the whole website is set according to that particular user only.
 
+![](/Img/screenshots/signin.gif)
+
+*Screenshots of sign in and landing on Choose page*
+
 One special feature of the sign up form is that the address feild of the form automatically suggests the full address to the user using the google maps api. Source: https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=(special_key_provided_by_google)".
-![]
-![]
+
+![](/Img/screenshots/googleapi.gif)
+
+*Screenshots of google maps api usage*
+
+CHOOSE
+
+The choose page also has a header but it is different. This header has the logo on the left side and has two additional butons: "Post Ad" and "Browse". The Browse button takes the user to the buyer.php page.This page prompts welcome message to the user with their name which is retrieved from the database and shows two buttons below it for navigation to postad.php or buyer.php.
+
+![](/Img/screenshots/choose.gif)
+
+*Screenshots of choose.php page*
 
 
-
-![](/Img/screenshots/choose.png)
-
-*Screenshots of choose.php where the users can choose whether they want to post an Ad or buy something.*
-
-The choose page also has a header but it is different. This header has the logo on the left side and has two additional butons: "Post Ad" and "Browse". The Browse button takes the user to the buyer.php page.
-![]
-
-This page prompts welcome message to the user with their name which is retrieved from the database and shows two buttons below it for navigation to postad.php or buyer.php.
-![]
-
-
-![](/Img/screenshots/postad.png)
-
-*Screenshots of postad.php where the users get a form to post an Ad.*
+POSTAD
 
 "postad.php" is simply a form which collects all the information about the Ad that the user wants to post. All the information collected for this ad is stored in the database table "advertisements". 
 
@@ -122,32 +131,48 @@ The address feild of the post ad form also uses the google maps api for autofill
 
 A user can also upload an image with their ad through the same form itself. The image is automatically renamed to a unique name and stored in /project-gizmo/public/html_php/img/ ans the path of the image is also stored int the database table "advertisement".
 
+![](/Img/screenshots/postad.gif)
 
+*Screenshots of postad.php where the users get a form to post an Ad and confirmation that the ad is successfully posted.*
 
-![](/Img/screenshots/buyer.png)
+BUYER/BROWSE
+
+"buyer.php" page shows a user all the ads availabe on the website. there is a button on top right corner of the page called "Choose ypur category" which is a dropdown menu with a lot of different categories. A user can filter through the categories by clicking on the one he is interested in. 
+
+![](/Img/screenshots/filter.gif)
+
+*Screenshots of the category dropdown menu for filtering.*
+
+The page has multiple ad cards which shows the image, the title, and the asking price for each ad. When a user hover over the ad there will a hover effect animation and the card will change and show all the information about that ad which it retrieves from the database.
+
+![](/Img/screenshots/buyer.gif)
 
 *Screenshots of buyer.php where the users can look for something they want to buy.*
 
-"buyer.php" page shows a user all the ads availabe on the website. there is a button on top right corner of the page called "Choose ypur category" which is a dropdown menu with a lot of different categories. A user can filter through the categories by clicking on the one he is interested in. 
-![]
 
-The page has multiple ad cards which shows the image, the title, and the asking price for each ad. There is also a button "View Ad" on each card which pulls out a pop up with all the information about that ad. All the information is retrieved from the database.
+PROFILE
 
-![](/Img/screenshots/item.png)
+The profile page show all the information of the user that it retrieves from the database on the right side of the page. On the left side there are all the ads that a user has posted on the website again readong all the information form the database.
 
-*Screenshots of item.php which comes up when the user clicks the "View Ad" button for a particuar Ad on the Buyer page.*
-
-![](/Img/screenshots/profile.png)
+![](/Img/screenshots/profile.gif)
 
 *Screenshots of profile.php where the user can see their profile information and all the ads that they have posted.*
 
-The profile page show all the information of the user that it retrieves from the database on the right side of the page. 
+LOGOUT
 
-On the left side there are all the ads that a user has posted on the website again readong all the information form the database.
+When a user is signed in and they press the home button they will see a slightly different home page. Where in the bottom right of the page there is a logout button that when pressed will logout the user from the website and terminate the actve session. It will take the user to the original welcome.php page.
+
+![](/Img/screenshots/logout.gif)
+
+*Screenshots of welcome page when the user is signed in.*
+
+ABOUT
 
 ![](/Img/screenshots/about.png)
 
 *Screenshots of about.php where a user can see information about our company.*
+
+CONTACT US
 
 ![](/Img/screenshots/contactus.png)
 
@@ -155,33 +180,16 @@ On the left side there are all the ads that a user has posted on the website aga
 
 The contact us page takes all the information entered on the page and saves it to the database table "contactus".
 
+
+
 **Database Population**
 
-To populate the database you have to run the scripts written in the dbpopulate.txt file.
+For the database you have to create tables from the given scripts in project-gizmo/docs/scripts_db in Pgadmin Database management system.
 
-
-**Additional explanation for some Features**
-
+You will also find sample data to populate the tables in userinfoPopulation.txt and advertisementPopulation.txt.
 
 
 
-**Front-end Interactivty Using Javascript**
-
-We have successfully configured the signup and the signin page with a fully functional database system. A user can go to the home page and signup for an account. After successful signup the user is then taken back to the home page and they can sign in successfully. After signing in the user is taken to the choose.php page.
-
-![](/Img/screenshots/signup.png)
-
-*Screenshots of signup popup*
-
-![](/Img/screenshots/signin.png)
-
-*Screenshots of signin section on the home page*
-
-If a user enters wrong credentials they are prompted to go back and try again.
-
-![](/Img/screenshots/signinerror.png)
-
-*Screenshots of signin error alert*
 
 
 
