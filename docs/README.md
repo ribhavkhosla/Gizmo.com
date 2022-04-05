@@ -185,7 +185,7 @@ For the database you have to create tables from the given scripts in project-giz
 You will also find sample data to populate the tables in userinfoPopulation.txt and advertisementPopulation.txt.
 
 Please check project-gizmo/Img/screenshots to check out the gifs if all of them dont show up 
-on this readme.
+on this readme. 
 
 
 
