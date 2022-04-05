@@ -1,0 +1,16 @@
+CREATE TABLE IF NOT EXISTS public.user_info
+(
+    firstname character varying(50) COLLATE pg_catalog."default",
+    lastname character varying(50) COLLATE pg_catalog."default",
+    phone bigint,
+    address character varying(50) COLLATE pg_catalog."default",
+    email character varying(50) COLLATE pg_catalog."default",
+    password character varying(50) COLLATE pg_catalog."default",
+    userid integer NOT NULL,
+    CONSTRAINT user_info_pkey PRIMARY KEY (userid)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.user_info
+    OWNER to postgres;

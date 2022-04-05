@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS public.contactus
+(
+    email character varying COLLATE pg_catalog."default" NOT NULL,
+    name character varying COLLATE pg_catalog."default",
+    description character varying COLLATE pg_catalog."default",
+    CONSTRAINT contactus_pkey PRIMARY KEY (email)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.contactus
+    OWNER to postgres;

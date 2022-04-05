@@ -1,0 +1,19 @@
+CREATE TABLE IF NOT EXISTS public.advertisement
+(
+    id integer NOT NULL,
+    name character varying(1000) COLLATE pg_catalog."default",
+    price integer,
+    condition character varying(1000) COLLATE pg_catalog."default",
+    category character varying(1000) COLLATE pg_catalog."default",
+    description character varying(1000) COLLATE pg_catalog."default",
+    location character varying(1000) COLLATE pg_catalog."default",
+    contactinfo character varying(1000) COLLATE pg_catalog."default",
+    userid integer,
+    image character varying(1000) COLLATE pg_catalog."default",
+    CONSTRAINT advertisement_pkey PRIMARY KEY (id)
+)
+
+TABLESPACE pg_default;
+
+ALTER TABLE IF EXISTS public.advertisement
+    OWNER to postgres;
