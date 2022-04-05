@@ -133,34 +133,46 @@ A user can also upload an image with their ad through the same form itself. The 
 
 ![](/Img/screenshots/postad.gif)
 
-*Screenshots of postad.php where the users get a form to post an Ad.*
+*Screenshots of postad.php where the users get a form to post an Ad and confirmation that the ad is successfully posted.*
 
+BUYER/BROWSE
 
+"buyer.php" page shows a user all the ads availabe on the website. there is a button on top right corner of the page called "Choose ypur category" which is a dropdown menu with a lot of different categories. A user can filter through the categories by clicking on the one he is interested in. 
 
-![](/Img/screenshots/buyer.png)
+![](/Img/screenshots/filter.gif)
+
+*Screenshots of the category dropdown menu for filtering.*
+
+The page has multiple ad cards which shows the image, the title, and the asking price for each ad. When a user hover over the ad there will a hover effect animation and the card will change and show all the information about that ad which it retrieves from the database.
+
+![](/Img/screenshots/buyer.gif)
 
 *Screenshots of buyer.php where the users can look for something they want to buy.*
 
-"buyer.php" page shows a user all the ads availabe on the website. there is a button on top right corner of the page called "Choose ypur category" which is a dropdown menu with a lot of different categories. A user can filter through the categories by clicking on the one he is interested in. 
-![]
 
-The page has multiple ad cards which shows the image, the title, and the asking price for each ad. There is also a button "View Ad" on each card which pulls out a pop up with all the information about that ad. All the information is retrieved from the database.
+PROFILE
 
-![](/Img/screenshots/item.png)
+The profile page show all the information of the user that it retrieves from the database on the right side of the page. On the left side there are all the ads that a user has posted on the website again readong all the information form the database.
 
-*Screenshots of item.php which comes up when the user clicks the "View Ad" button for a particuar Ad on the Buyer page.*
-
-![](/Img/screenshots/profile.png)
+![](/Img/screenshots/profile.gif)
 
 *Screenshots of profile.php where the user can see their profile information and all the ads that they have posted.*
 
-The profile page show all the information of the user that it retrieves from the database on the right side of the page. 
+LOGOUT
 
-On the left side there are all the ads that a user has posted on the website again readong all the information form the database.
+When a user is signed in and they press the home button they will see a slightly different home page. Where in the bottom right of the page there is a logout button that when pressed will logout the user from the website and terminate the actve session. It will take the user to the original welcome.php page.
+
+![](/Img/screenshots/logout.gif)
+
+*Screenshots of welcome page when the user is signed in.*
+
+ABOUT
 
 ![](/Img/screenshots/about.png)
 
 *Screenshots of about.php where a user can see information about our company.*
+
+CONTACT US
 
 ![](/Img/screenshots/contactus.png)
 
@@ -168,33 +180,16 @@ On the left side there are all the ads that a user has posted on the website aga
 
 The contact us page takes all the information entered on the page and saves it to the database table "contactus".
 
+
+
 **Database Population**
 
-To populate the database you have to run the scripts written in the dbpopulate.txt file.
+For the database you have to create tables from the given scripts in project-gizmo/docs/scripts_db in Pgadmin Database management system.
 
-
-**Additional explanation for some Features**
-
+You will also find sample data to populate the tables in userinfoPopulation.txt and advertisementPopulation.txt.
 
 
 
-**Front-end Interactivty Using Javascript**
-
-We have successfully configured the signup and the signin page with a fully functional database system. A user can go to the home page and signup for an account. After successful signup the user is then taken back to the home page and they can sign in successfully. After signing in the user is taken to the choose.php page.
-
-![](/Img/screenshots/signup.png)
-
-*Screenshots of signup popup*
-
-![](/Img/screenshots/signin.png)
-
-*Screenshots of signin section on the home page*
-
-If a user enters wrong credentials they are prompted to go back and try again.
-
-![](/Img/screenshots/signinerror.png)
-
-*Screenshots of signin error alert*
 
 
 
