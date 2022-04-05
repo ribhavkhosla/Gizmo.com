@@ -80,7 +80,7 @@ Our automated testing code runs the Hello World test which was based on sampleph
 
 
 
-**UI & UX Design Systems and Features on each**
+**UI & UX Design Systems and Features on each page**
 
 Below you can see all the webpages and their features that a user can access and use.
 
@@ -89,7 +89,10 @@ Below you can see all the webpages and their features that a user can access and
 *Screenshots of our landing page welcome.php*
 
 The welcome page is the homepage of the website. It has a header which has hoverable buttons which can take a user to other linked pages.
-![]
+
+![](/Img/screenshots/hover.gif)
+
+*Screenshots of hoverable buttons*
 
 There is a Signin area on the right side of the page and below that there is a Signup button which pops up a sign up form for a user to sign up and create an account. When the user tries to sign up, their information is collected in the database table "user_info" and the user verification process is also done with the help of the database. 
 
@@ -104,9 +107,10 @@ When a user tries to sign in and fills out the email and password, this informat
 *Screenshots of sign in and landing on Choose page*
 
 One special feature of the sign up form is that the address feild of the form automatically suggests the full address to the user using the google maps api. Source: https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=(special_key_provided_by_google)".
-![]
-![]
 
+![](/Img/screenshots/googleapi.gif)
+
+*Screenshots of google maps api usage*
 
 
 ![](/Img/screenshots/choose.png)
