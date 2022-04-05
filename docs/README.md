@@ -93,7 +93,15 @@ The welcome page is the homepage of the website. It has a header which has hover
 
 There is a Signin area on the right side of the page and below that there is a Signup button which pops up a sign up form for a user to sign up and create an account. When the user tries to sign up, their information is collected in the database table "user_info" and the user verification process is also done with the help of the database. 
 
+![](/Img/screenshots/signuppop.gif)
+
+*Screenshots of sign up pop*
+
 When a user tries to sign in and fills out the email and password, this information is verified by accessing the database whether there exist a user whth the exact same information that has been provided. After a user has succussfully signed into their account, a session is started. and the whole website is set according to that particular user only.
+
+![](/Img/screenshots/signin.gif)
+
+*Screenshots of sign in and landing on Choose page*
 
 One special feature of the sign up form is that the address feild of the form automatically suggests the full address to the user using the google maps api. Source: https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places&key=(special_key_provided_by_google)".
 ![]
