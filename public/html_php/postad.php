@@ -1,8 +1,8 @@
 <?php
 error_reporting(0);
 session_start();
-include_once 'postad_db.php';
-include_once 'signin_db.php';
+include_once '../db/postad_db.php';
+include_once '../db/signin_db.php';
 ?>
 
 <!DOCTYPE html>

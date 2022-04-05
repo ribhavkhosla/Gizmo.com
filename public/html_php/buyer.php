@@ -52,65 +52,12 @@ include '../db/postad_db.php';
         Click Home to sign in or make an account.<div>';
     }
     ?>
-<<<<<<< Updated upstream
     <!-- <div id="myModal" class="modal">
         <div id = "para" class="modal-content">
             <span class="close">&times;</span>
             <p id="ad"></p>
         </div>
     </div> -->
-=======
-    <script>
-        function onLoad(arr){
-            var imp = document.createElement("div");
-            document.body.appendChild(imp);
-            for(i = 0; i< arr.length; i++){
-                imp.id = "container";
-                var cont = document.getElementById("container");
-                var divs = document.createElement("div");
-                var box = document.createElement("div");
-                var image = document.createElement("img");
-                var head4 = document.createElement("h4");
-                var cost = document.createElement("p");
-                var bttn = document.createElement("button");
-
-                box.className = 'imageBox';
-                divs.className = 'card';
-                cost.className = 'price';
-                bttn.className = 'viewAd';
-                image.src = arr[i].image;
-                box.width = "200";
-                box.height = "500";
-                image.width="200";
-                
-                var arrId = arr[i].id;
-                head4.innerHTML = arr[i].title;
-                cost.innerHTML = '$' + arr[i].price + arrId ;
-
-                
-
-                // btnn.id = arr[i].id;
-
-                bttn.innerHTML = "<a href='item.php?id=1'><button id='bttn1' onclick='storeVar(this.value)' value='arrId'>View Ad</button></a>";
-                function storeVar(v){
-                    let val1  = v;
-                    console.log(val1);
-                }
-
-                // bttn.innerHTML = "View Ad";
-                box.appendChild(image);
-                divs.appendChild(box);
-                divs.appendChild(head4);
-                divs.appendChild(cost);
-                divs.appendChild(bttn);
-
-                cont.appendChild(divs);
-            }
-        }
-
-        
-    </script>
->>>>>>> Stashed changes
 </body>
 
 </html>

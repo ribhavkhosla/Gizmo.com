@@ -8,6 +8,7 @@
     <link rel='stylesheet' href='/project-gizmo/public/css/welcome.css'>
 </head>
 
+
 <body>
     <div class='main'>
         <div class='navbar'>
@@ -64,11 +65,9 @@
         </form>
     </div>
     </div>
-
-
-    <script src="../js/welcome.js"></script>
-    <script src='https://unpkg.com/ionicons@5.4.0/dist/ionicons.js'></script>
-    <script src='https://cdn.jsdelivr.net/npm/typed.js@2.0.12'></script>
 </body>
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="../js/welcome.js"></script>
 
 </html>
