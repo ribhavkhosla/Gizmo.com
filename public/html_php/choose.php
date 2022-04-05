@@ -16,7 +16,7 @@
         <?php
         if (isset($_SESSION['uId'])){
             echo'
-            <div class="heading"> Hello there ' . $_SESSION['uname'].' <br> How can we help you today?</div>
+            <div class="heading"> Hello there ' . ucfirst($_SESSION['uname']).' <br> How can we help you today?</div>
             <button class="marginL"><a href="postad.php">Post an Ad</a></button>
             <button class="marginR"><a href="buyer.php">Buy Stuff</a></button>
             </div>';

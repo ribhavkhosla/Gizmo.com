@@ -32,7 +32,7 @@
                     <br>
                     <br>
                     <h3>Name</h3>
-                    <p>'.$_SESSION['uname'].' '.$_SESSION['lname'].'</p>
+                    <p>'.ucfirst($_SESSION['uname']).' '.ucfirst($_SESSION['lname']).'</p>
                     <br>
                     <h3>Phone Number</h3>
                     <p>+'.$_SESSION['phone'].'</p>
