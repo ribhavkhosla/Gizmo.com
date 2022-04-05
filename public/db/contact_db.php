@@ -7,7 +7,7 @@ if(isset($_POST["submit"]) && $_POST["submit"]=="submit")
     $query = "INSERT INTO contactus values('$email', '$name', '$message')";    
     $res = pg_query($conn, $query);
     if($res){
-        header("location:contact.php");
+        header("location:../html_php/contact.php");
     }
 ?>
 

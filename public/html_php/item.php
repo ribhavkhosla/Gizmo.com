@@ -1,5 +1,6 @@
 <?php
-include_once 'signin_db.php';
+session_start();
+include_once '../db/signin_db.php';
 ?>
 
 <!DOCTYPE html>
@@ -9,16 +10,14 @@ include_once 'signin_db.php';
     <?php include('header.php')?>
     <title>Gizmo.com/Product</title>
     <link rel="stylesheet" href="/project-gizmo/public/css/item.css">
-    <script src="cards.js"> </script>
+    <script src="../js/cards.js"> </script>
+    <script src="../js/item.js"></script>
+
 </head>
 
 <body>
     <div class="main">
         <?php include('nav.php')?>
-        <?php
-        $myId = $_GET['id'];
-        echo $myID;
-        ?>
         <div class="aboutItem">
             <h3>Iphone 13 Pro Max</h3>
             <h3>Price:</h3>
@@ -38,40 +37,10 @@ include_once 'signin_db.php';
             <p>randomrandom@email.com</p>  
         </div>
 
-        <div class="container">
-            <img src="/project-gizmo/Img/1.png" id="expandedImg" alt="Item Image" style="width: 60%;">
-            <img id="expandedImg" style="width:60%">
-        </div>
-
-        
-        <div class="row">
-            <div class="column">
-                <img src="/project-gizmo/Img/1.png" style="width: 100%;" alt="Item Image" onclick="myFunction(this);">
-            </div>
-            <div class="column">
-                <img src="/project-gizmo/Img/2.png" style="width: 100%;" alt="Item Image" onclick="myFunction(this);">
-            </div>
-            <div class="column">
-                <img src="/project-gizmo/Img/3.png" style="width: 100%;" alt="Item Image" onclick="myFunction(this);">
-            </div>
-            <div class="column">
-                <img src="/project-gizmo/Img/4.png" style="width: 100%;" alt="Item Image" onclick="myFunction(this);">
-            </div>
-        </div>
-        
-
-
+        <div id="cont"> </div>
+    
     </div>
 
 </body>
-<script>
-    function myFunction(imgs) {
-        var expandImg = document.getElementById("expandedImg");
-        var imgText = document.getElementById("imgtext");
-        expandImg.src = imgs.src;
-        imgText.innerHTML = imgs.alt;
-        expandImg.parentElement.style.display = "block";
-    }
-</script>
 
 </html>

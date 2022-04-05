@@ -1,9 +1,9 @@
 <?php
     session_start();
-    include('signin_db.php');
+    include('../db/signin_db.php');
     if (isset($_SESSION['uId'])){
         echo'
-        <div class="log" action="signin.php" method="POST">
+        <div class="log" action="../db/signin.php" method="POST">
             <h2>Hello ' . ucfirst($_SESSION['uname']). '!</h2>
             <br>
             <h4>You are currently signed in.</h4>
@@ -16,7 +16,7 @@
     }else{
         echo "<div class='form' action='signin.php' method='POST'>
             <h2>Sign In</h2>
-            <form action='signin_db.php' method='post'>
+            <form action='../db/signin_db.php' method='post'>
                 <input type='email' name='email' placeholder='Email' required>
                 <input type='password' name='pswd' placeholder='Password' required>
                 <button name = 'signin' value='Login' type='submit' class='btnn'><a>Login</a></button>

@@ -1,6 +1,3 @@
-window.onload = function(){
-    onLoad(prodList);
-}
 
 var prodList = [];
 
@@ -14,7 +11,7 @@ function addCard(){
         attributes["condition"] = addArr[i][3];
         attributes["category"] = addArr[i][4];
         attributes["description"] = addArr[i][5];
-        attributes["locaiton"] = addArr[i][6];
+        attributes["location"] = addArr[i][6];
         attributes["contactinfo"] = addArr[i][7];
         attributes['userid'] = addArr[i][8];
         attributes['image'] = addArr[i][9];
@@ -24,7 +21,7 @@ function addCard(){
 function transform(){
     jQuery.ajax({
         type: "POST",
-        url: "listCard.php",
+        url: "../db/list_db.php",
         dataType: 'json',
         data: {functionname: 'arrayR' , arguments: [] },
         success: function(data){
@@ -55,15 +52,6 @@ function dropDown(val) {
         onLoad(resArr);
     }
 }
-
-function showArr(arr){
-    var resArr = [];
-    for(i=0;i<arr.length;i++){
-        resArr.push(arr[i]);
-    }
-    onLoad(resArr);
-}
-
 
     
 

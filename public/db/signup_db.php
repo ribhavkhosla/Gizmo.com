@@ -15,7 +15,7 @@ if(isset($_POST["signup"]) && $_POST["signup"]=="Save"){
     values('".$fname."', '".$lname."', ".$phone.", '".$address."', '".$email."', '".$psw."', ".$id.")";
     $res = pg_query($conn, $query);
     if($res){
-        header("location: welcome.php");
+        header("location: ../html_php/welcome.php");
     }
     
 }

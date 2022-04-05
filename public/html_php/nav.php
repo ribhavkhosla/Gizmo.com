@@ -9,6 +9,7 @@
                 <li><a href="contact.php">CONTACT</a></li>
                 <li><a href="profile.php">PROFILE</a></li>
                 <li><a href="postad.php">POST AD</a></li>
+                <li><a href="buyer.php">BROWSE</a></li>
             </ul>
         </div>
     </div>

@@ -20,7 +20,7 @@ include_once 'signin_db.php';
         <?php include('nav.php') ?>
         <?php
         if (isset($_SESSION['uId'])) {
-            echo '<form class="form" action="postad_db.php" method="post" enctype="multipart/form-data">
+            echo '<form class="form" action="../db/postad_db.php" method="post" enctype="multipart/form-data">
             <div class="content">
                 <h1>Post an Ad</h1>
                 <br>

@@ -33,12 +33,12 @@ if(isset($_SESSION['uId'])){
             if($fileError === 0){
                 if($fileSize < 2000000){
                     $fileNameNew = "adImg". "-" . $id . "." . $fileActualExt;
-                    $fileDestination = "img/" . $fileNameNew;
+                    $fileDestination = "../html_php/img/" . $fileNameNew;
                     move_uploaded_file($fileTmpName, $fileDestination);
                     $query = "INSERT INTO advertisement values('$id', '$tname', '$price', '$condition', '$category', '$desc', '$location', '$contact', '$usrId', '$fileDestination')";
                     $res = pg_query($conn, $query);
                     if($res){
-                        header("Location:buyer.php?youradissuccessfullyposted");
+                        header("Location:../html_php/buyer.php?youradissuccessfullyposted");
                     }
                 }else{
                     echo "Your file is too big";

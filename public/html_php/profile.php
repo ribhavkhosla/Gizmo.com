@@ -1,7 +1,7 @@
 <?php
     error_reporting(0);
     session_start();
-    include_once 'signin_db.php';
+    include_once '../db/signin_db.php';
     $usrId = $_SESSION['uId'];
 ?>
 
@@ -12,11 +12,13 @@
     <?php include('header.php')?>
     <title>Gizmo.com/MyProfile</title>
     <link rel="stylesheet" href="/project-gizmo/public/css/profile.css">
-    <script src="cards.js"></script>
+    <script src="../js/cards.js"></script>
+    <script src="../js/profile.js"></script>
 </head>
 
 <body onload ="userAds()">
     <div id="m" class="main">
+    <input type="hidden" id="userid" value="<?php echo $usrId ?>" />
         <?php include('nav.php')?>
         <?php
             error_reporting(0);
@@ -50,58 +52,6 @@
                 Click Home to sign in or make an account.<div>';
             }
             ?>
-            <script>
-            function onLoad(arr){
-                var imp = document.createElement("div");
-                var main = document.getElementById("m");
-                document.body.appendChild(imp);
-                for(i=0;i<arr.length;i++){
-                    imp.id = "container";
-                    var cont = document.getElementById("container");
-                    var block = document.createElement("div");
-                    var imageBox = document.createElement("div");
-                    var image = document.createElement("img");
-                    var title = document.createElement("div");
-                    var txt = document.createElement("h2");
-
-                    cont.className = "cont";
-                    block.className = "infoBox"; 
-                    title.className = "textBox";  
-                    imageBox.className = "imageBox";
-
-                    imageBox.width = "100";
-                    imageBox.height = "400";
-                    image.width = "150";    
-
-                    txt.innerHTML = arr[i].title;
-                    image.src = arr[i].image;
-
-                    title.appendChild(txt);
-                    imageBox.appendChild(image);
-
-                    block.appendChild(imageBox);
-                    block.appendChild(title);
-                    
-                    cont.appendChild(block);
-
-                    main.appendChild(cont);
-                }
-
-            }
-            function userAds(){
-                var num= "<?php echo $usrId ?>";
-                var resArr = [];
-                console.log(num);
-                for(i=0;i<prodList.length;i++)
-                {
-                    if(prodList[i].userid == num)
-                    {
-                        resArr.push(prodList[i]);
-                    }
-                }
-                onLoad(resArr);
-            }
-            </script>
            
     </div>
 

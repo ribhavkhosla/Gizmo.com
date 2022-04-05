@@ -1,21 +1,21 @@
-**#CSI3140: Deliverable 3**
+**#CSI3140: Deliverable 4**
 
 Aditya Nair 300076404
 
 Ribhav Khosla 300087647
 
-The deliverable 3 includes all the technologies we used for our project. There are a number of changes from our previous deliverable.
+The deliverable 4 includes all the technologies we used for our project. There are a number of changes from our previous deliverable.
 
 
 **Table of Contents:**
+1. Implementation of features Server / Client / HTML / CSS
+2. Software Documentation 
+3. Adherance to UI Design System
+4. Seeding application with sample data
+5. Screenshots of available features
+6. Application v1.0 (quality versus quantity)
 
-1. Server Technology
-2. Database Technology
-3. Automated Test Framework
-4. Refined HTML/CSS + UI design systems
-5. Front-end interactivity using JavaScript
-
-**Server Technology**
+**Implementation of features Server / Client / HTML / CSS**
 
 
 

@@ -25,7 +25,7 @@
                 $_SESSION['phone'] = $phoneArr[$i];
                 $_SESSION['address'] = $addArr[$i];
                 $_SESSION['email'] = $usrArr[$i];
-                header("location: choose.php");
+                header("location: ../html_php/choose.php");
             }
         }
         echo "<script>alert('Invalid User Info. Go back and try again.')</script>";
