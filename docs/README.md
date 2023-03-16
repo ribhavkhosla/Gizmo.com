@@ -1,8 +1,8 @@
-**#CSI3140: Deliverable 4**
+**Gizmo.com**
 
-Aditya Nair 300076404
+@author Aditya Nair 
 
-Ribhav Khosla 300087647
+@author Ribhav Khosla 
 
 
 **Table of Contents:**
